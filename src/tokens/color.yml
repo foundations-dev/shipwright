@@ -6,6 +6,7 @@
 # To make things a little simpler for your team,
 # utilize both global & local tokens for colors.
 #
+# "color" is removed from the beginning of the string
 
 aliases:
   vermilion:
@@ -83,6 +84,9 @@ props:
     category: color_group_4
   color_cloud:
     value: "#E9F3FD"
+    category: color_group_4
+  color_new:
+    value: "#f9F5FD"
     category: color_group_4
 global:
   type: color

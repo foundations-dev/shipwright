@@ -1,10 +1,11 @@
 # NP Design System
 
-**NP Design System** is built on the [Vue Design System Project](https://github.com/viljamis/vue-design-system) and will host the styles of New Perspectives.
+**NP Design System** hosts the styles of New Perspectives. It is built with [Vue Design System Project](https://github.com/viljamis/vue-design-system).
 
 ## NPM Scripts
 
-`start` - Serves the Vue App at [http://localhost:8080/] and docs at [http://localhost:6060/]
+`start` - Serves the Vue App at [http://localhost:8080/] and docs at [http://localhost:6060/]
+
 `build:system --report` - Builds the design system for NPM with report
 `build:docs` - Builds the design system docs
 `build:app` - Build Vue.js app (playground) for production _with minification._

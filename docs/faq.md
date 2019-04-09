@@ -1,3 +1,5 @@
+**!!! This page has not been updated**
+
 ## What is the Vue Design System?
 
 Vue Design System is an open source tool for building UI Design Systems with [Vue.js](https://vuejs.org). It provides you and your team a set of organized tools, patterns & practices that work as the foundation for your application development. [Read more about it](https://viljamis.com/2018/vue-design-system/).

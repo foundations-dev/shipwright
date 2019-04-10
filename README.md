@@ -4,10 +4,12 @@
 
 ## NPM Scripts
 
-`start` - Serves the Vue App at [http://localhost:8080/] and docs at [http://localhost:6060/]
+`start` - Serves the Vue App at (http://localhost:8080/] and docs at (http://localhost:6060/)
 
 `build:system --report` - Builds the design system for NPM with report
+
 `build:docs` - Builds the design system docs
+
 `build:app` - Build Vue.js app (playground) for production _with minification._
 
 see original documentation below

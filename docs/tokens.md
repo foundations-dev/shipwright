@@ -4,7 +4,7 @@
 
 [x] Colors
 [ ] Font Sizes
-[ ] Spacing
+[x] Spacing
 [ ] All Tokens
 
 ---

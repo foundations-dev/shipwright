@@ -16,6 +16,9 @@ imports:
   - ./border-radius.yml
   - ./spacing.yml
   - ./line-height.yml
+  # defaults
+  - ./color-default.yml
+
 global:
   type: global
   category: all

@@ -80,14 +80,12 @@ props:
     value: "{!white}"
     category: color_group_4
   color_silver:
-    value: "#7F8891"
+    value: "hsla(210, 8%, 53%, 1)"
     category: color_group_4
   color_cloud:
-    value: "#E9F3FD"
+    value: "hsla(210, 83%, 95%, 1)"
     category: color_group_4
-  color_new:
-    value: "#f9F5FD"
-    category: color_group_4
+
 global:
   type: color
   category: color

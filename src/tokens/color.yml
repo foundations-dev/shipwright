@@ -8,86 +8,197 @@
 #
 # "color" is removed from the beginning of the string
 
-aliases:
-  vermilion:
-    value: "7, 83%"
-  ucla_gold:
-    value: "43, 100%"
-  bleu_de_france:
-    value: "210, 86%"
-  oxford_blue:
-    value: "210, 100%"
-  rich_black:
-    value: "#001123"
-  white:
-    value: "#fff"
 props:
-  color_vermilion_darker:
-    value: "hsla({!vermilion}, 33%, 1)"
-    category: color_group_1
-  color_vermilion_dark:
-    value: "hsla({!vermilion}, 43%, 1)"
-    category: color_group_1
-  color_vermilion:
-    value: "hsla({!vermilion}, 53%, 1)"
-    category: color_group_1
-  color_vermilion_light:
-    value: "hsla({!vermilion}, 63%, 1)"
-    category: color_group_1
-  color_vermilion_lighter:
-    value: "hsla({!vermilion}, 75%, 1)"
-    category: color_group_1
+  color_N0:
+    value: "#FFFFFF"
+    category: color_group_N
+  color_N10:
+    value: "#FAFBFC"
+    category: color_group_N
+  color_N20:
+    value: "#F4F5F7"
+    category: color_group_N
+  color_N30:
+    value: "#EBECF0"
+    category: color_group_N
+  color_N40:
+    value: "#DFE1E6"
+    category: color_group_N
+  color_N50:
+    value: "#C1C7D0"
+    category: color_group_N
+  color_N60:
+    value: "#B3BAC5"
+    category: color_group_N
+  color_N70:
+    value: "#A5ADBA"
+    category: color_group_N
+  color_N80:
+    value: "#97A0AF"
+    category: color_group_N
+  color_N90:
+    value: "#8993A4"
+    category: color_group_N
+  color_N100:
+    value: "#7A869A"
+    category: color_group_N
+  color_N200:
+    value: "#6B778C"
+    category: color_group_N
+  color_N300:
+    value: "#5E6C84"
+    category: color_group_N
+  color_N400:
+    value: "#505F79"
+    category: color_group_N
+  color_N500:
+    value: "#42526E"
+    category: color_group_N
+  color_N600:
+    value: "#344563"
+    category: color_group_N
+  color_N700:
+    value: "#253858"
+    category: color_group_N
+  color_N800:
+    value: "#172B4D"
+    category: color_group_N
+  color_N900:
+    value: "#091E42"
+    category: color_group_N
 
-  color_ucla_gold_darker:
-    value: "hsla({!ucla_gold}, 35%, 1)"
-    category: color_group_2
-  color_ucla_gold_dark:
-    value: "hsla({!ucla_gold}, 45%, 1)"
-    category: color_group_2
-  color_ucla_gold:
-    value: "hsla({!ucla_gold}, 52%, 1)"
-    category: color_group_2
-  color_ucla_gold_light:
-    value: "hsla({!ucla_gold}, 65%, 1)"
-    category: color_group_2
-  color_ucla_gold_lighter:
-    value: "hsla({!ucla_gold}, 75%, 1)"
-    category: color_group_2
+  color_R50:
+    value: "#FFEBE6"
+    category: color_group_R
+  color_R75:
+    value: "#FFBDAD"
+    category: color_group_R
+  color_R100:
+    value: "#FF8F73"
+    category: color_group_R
+  color_R200:
+    value: "#FF7452"
+    category: color_group_R
+  color_R300:
+    value: "#FF5630"
+    category: color_group_R
+  color_R400:
+    value: "#DE350B"
+    category: color_group_R
+  color_R500:
+    value: "#BF2600"
+    category: color_group_R
 
-  color_bleu_de_france_darker:
-    value: "hsla({!bleu_de_france}, 34%, 1)"
-    category: color_group_3
-  color_bleu_de_france_dark:
-    value: "hsla({!bleu_de_france}, 44%, 1)"
-    category: color_group_3
-  color_bleu_de_france:
-    value: "hsla({!bleu_de_france}, 54%, 1)"
-    category: color_group_3
-  color_bleu_de_france_light:
-    value: "hsla({!bleu_de_france}, 64%, 1)"
-    category: color_group_3
-  color_bleu_de_france_lighter:
-    value: "hsla({!bleu_de_france}, 74%, 1)"
-    category: color_group_3
+  color_Y50:
+    value: "#FFFAE6"
+    category: color_group_Y
+  color_Y75:
+    value: "#FFF0B3"
+    category: color_group_Y
+  color_Y100:
+    value: "#FFE380"
+    category: color_group_Y
+  color_Y200:
+    value: "#FFC400"
+    category: color_group_Y
+  color_Y300:
+    value: "#FFAB00"
+    category: color_group_Y
+  color_Y400:
+    value: "#FF991F"
+    category: color_group_Y
+  color_Y500:
+    value: "#FF8B00"
+    category: color_group_Y
 
-  color_oxford_blue:
-    value: "hsla({!oxford_blue}, 15%, 1)"
-    category: color_group_4
-  color_rich_black:
-    value: "{!rich_black}"
-    category: color_group_4
-  color_white:
-    value: "{!white}"
-    category: color_group_4
-  color_silver:
-    value: "#7F8891"
-    category: color_group_4
-  color_cloud:
-    value: "#E9F3FD"
-    category: color_group_4
-  color_new:
-    value: "#f9F5FD"
-    category: color_group_4
+  color_G50:
+    value: "#E3FCEF"
+    category: color_group_G
+  color_G75:
+    value: "#ABF5D1"
+    category: color_group_G
+  color_G100:
+    value: "#79F2C0"
+    category: color_group_G
+  color_G200:
+    value: "#57D9A3"
+    category: color_group_G
+  color_G300:
+    value: "#36B37E"
+    category: color_group_G
+  color_G400:
+    value: "#00875A"
+    category: color_group_G
+  color_G500:
+    value: "#006644"
+    category: color_group_G
+
+  color_T50:
+    value: "#E6FCFF"
+    category: color_group_T
+  color_T75:
+    value: "#B3F5FF"
+    category: color_group_T
+  color_T100:
+    value: "#79E2F2"
+    category: color_group_T
+  color_T200:
+    value: "#00C7E6"
+    category: color_group_T
+  color_T300:
+    value: "#00B8D9"
+    category: color_group_T
+  color_T400:
+    value: "#00A3BF"
+    category: color_group_T
+  color_T500:
+    value: "#008DA6"
+    category: color_group_T
+
+  color_B50:
+    value: "#DEEBFF"
+    category: color_group_B
+  color_B75:
+    value: "#B3D4FF"
+    category: color_group_B
+  color_B100:
+    value: "#4C9AFF"
+    category: color_group_B
+  color_B200:
+    value: "#2684FF"
+    category: color_group_B
+  color_B300:
+    value: "#0065FF"
+    category: color_group_B
+  color_B400:
+    value: "#0052CC"
+    category: color_group_B
+  color_B500:
+    value: "#0747A6"
+    category: color_group_B
+
+  color_P50:
+    value: "#EAE6FF"
+    category: color_group_P
+  color_P75:
+    value: "#C0B6F2"
+    category: color_group_P
+  color_P100:
+    value: "#998DD9"
+    category: color_group_P
+  color_P200:
+    value: "#8777D9"
+    category: color_group_P
+  color_P300:
+    value: "#6554C0"
+    category: color_group_P
+  color_P400:
+    value: "#5243AA"
+    category: color_group_P
+  color_P500:
+    value: "#403294"
+    category: color_group_P
+
 global:
   type: color
   category: color

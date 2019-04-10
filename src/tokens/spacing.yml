@@ -21,21 +21,3 @@ props:
 global:
   type: number
   category: space
-# props:
-#   space_xxl:
-#     value: "128px" #avoid using
-#   space_xl:
-#     value: "64px"
-#   space_l:
-#     value: "32px"
-#   space_m:
-#     value: "16px"
-#   space_s:
-#     value: "8px"
-#   space_xs:
-#     value: "4px"
-#   space_xxs:
-#     value: "2px" #avoid using
-# global:
-#   type: number
-#   category: space

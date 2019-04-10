@@ -7,7 +7,7 @@ props:
   space_xxl:
     value: "3rem"
   space_xl:
-    value: ".2rem"
+    value: "2rem"
   space_l:
     value: "1.5rem"
   space_m:

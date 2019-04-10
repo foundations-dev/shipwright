@@ -1,23 +1,41 @@
 #
 # SPACING TOKENS
 # Use these tokens to set padding, margin and position coordinates.
-#
+# TODO: Transition these to em values
 
 props:
   space_xxl:
-    value: "128px"
+    value: "3rem"
   space_xl:
-    value: "64px"
+    value: ".2rem"
   space_l:
-    value: "48px"
+    value: "1.5rem"
   space_m:
-    value: "24px"
+    value: "1rem"
   space_s:
-    value: "16px"
+    value: "0.75rem"
   space_xs:
-    value: "8px"
+    value: "0.5rem"
   space_xxs:
-    value: "4px"
+    value: "0.25rem"
 global:
   type: number
   category: space
+# props:
+#   space_xxl:
+#     value: "128px" #avoid using
+#   space_xl:
+#     value: "64px"
+#   space_l:
+#     value: "32px"
+#   space_m:
+#     value: "16px"
+#   space_s:
+#     value: "8px"
+#   space_xs:
+#     value: "4px"
+#   space_xxs:
+#     value: "2px" #avoid using
+# global:
+#   type: number
+#   category: space

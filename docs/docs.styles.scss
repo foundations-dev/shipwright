@@ -425,10 +425,10 @@ pre[class^="rsg--pre"],
   }
 }
 
-// // HTML preview needs some padding adjustments to match Styleguidist
-// .vueds-html.cm-s-night.CodeMirror {
-//   padding-left: $space-m - 4px;
-// }
+// HTML preview needs some padding adjustments to match Styleguidist
+.vueds-html.cm-s-night.CodeMirror {
+  padding-left: $space-m;
+}
 
 // VUE & HTML Code tabs
 div[class^="rsg--tab"] {

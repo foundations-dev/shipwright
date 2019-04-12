@@ -20,6 +20,10 @@ $docs-color-text: shade($color-silver, 70%);
 
 /* BASE
 --------------------------------------------- */
+// Base font size
+html {
+  font-size: $size-base;
+}
 
 // Background of page
 div.rsg--root-1 {
@@ -158,6 +162,7 @@ p[class^="rsg--para"] {
   margin-bottom: $space-s;
   line-height: $line-height-m;
   font-weight: $weight-normal;
+  font-size: $size-m;
   strong a[class^="rsg--link"] {
     font-weight: $weight-semi-bold;
   }

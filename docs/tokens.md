@@ -3,7 +3,7 @@
 ## To Do
 
 [x] Colors
-[ ] Font Sizes
+[x] Font Sizes
 [x] Spacing
 [ ] All Tokens
 

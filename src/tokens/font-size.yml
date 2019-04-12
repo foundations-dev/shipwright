@@ -3,12 +3,14 @@
 # Use these tokens to set a font-size.
 #
 # Using a perfect-fourth type scale with a 1rem base
-#
+# Alternate minor-third version available
 
 props:
   size_base:
-    value: "16px"
+    value: "21px"
 
+  size_xxxxl:
+    value: "4.209rem"
   size_xxxl:
     value: "3.157rem"
   size_xxl:

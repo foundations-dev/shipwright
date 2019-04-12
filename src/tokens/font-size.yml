@@ -6,6 +6,9 @@
 #
 
 props:
+  size_base:
+    value: "16px"
+
   size_xxxl:
     value: "3.157rem"
   size_xxl:

@@ -74,7 +74,7 @@ div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
   width: calc(100% + #{$space-xl * 2});
   margin: -#{$space-s} -#{$space-xl} $space-l -#{$space-xl};
   background: $color-cloud;
-  font-size: $size-xxl;
+  font-size: $size-xxxl;
   a:hover {
     text-decoration: none;
     cursor: default;
@@ -284,6 +284,7 @@ div[class^="rsg--sidebar"] {
   li[class^="rsg--item"] {
     margin: 0;
     display: block;
+    font-size: $size-m;
   }
 
   // Sidebar first level links
@@ -337,7 +338,7 @@ div[class^="rsg--sidebar"] {
 
       // Sidebar second level link
       a[class*="rsg--link"] {
-        font-size: $size-s;
+        font-size: $size-m;
         font-weight: $weight-normal;
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: auto;

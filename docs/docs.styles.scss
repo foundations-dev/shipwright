@@ -3,8 +3,8 @@
  * (the odd formatting hence most of the classes are dynamic)
  */
 
-@import "../src/assets/tokens/tokens.scss";
 @import "./docs.tokens.scss";
+@import "../src/assets/tokens/tokens.scss";
 @import "../src/styles/styles.scss";
 
 /* LOCAL DESIGN TOKENS
@@ -157,6 +157,7 @@ p[class^="rsg--para"] {
   color: $docs-color-text;
   margin-bottom: $space-s;
   line-height: $line-height-m;
+  font-weight: $weight-normal;
   strong a[class^="rsg--link"] {
     font-weight: $weight-semi-bold;
   }

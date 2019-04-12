@@ -17,7 +17,7 @@ module.exports = {
     maxWidth: "100%",
     sidebarWidth: 240,
     fontFamily: {
-      base: ["'IBM Plex Sans'", "Helvetica", "Arial", "sans-serif"],
+      base: ["IBM Plex Sans", "Helvetica", "Arial", "sans-serif"],
       monospace: ["Consolas", "'Liberation Mono'", "Menlo", "monospace"],
     },
   },

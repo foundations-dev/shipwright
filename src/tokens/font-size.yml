@@ -7,19 +7,34 @@
 
 props:
   size_xxxl:
-    value: "64px"
+    value: "3.157rem"
   size_xxl:
-    value: "48px"
+    value: "2.369rem"
   size_xl:
-    value: "36px"
+    value: "1.777rem"
   size_l:
-    value: "24px"
+    value: "1.333rem"
   size_m:
-    value: "16px"
+    value: "1.000rem"
   size_s:
-    value: "13px"
+    value: "0.750rem"
   size_xs:
-    value: "11px"
+    value: "0.563rem"
+
+  size_m3xxxl:
+    value: "2.074rem"
+  size_m3xxl:
+    value: "1.728rem"
+  size_m3xl:
+    value: "1.440rem"
+  size_m3l:
+    value: "1.200rem"
+  size_m3m:
+    value: "1.000rem"
+  size_m3s:
+    value: "0.833rem"
+  size_m3xs:
+    value: "0.694rem"
 global:
   type: number
   category: font-size

@@ -17,7 +17,6 @@ imports:
   - ./spacing.yml
   - ./line-height.yml
   # defaults
-  - ./color-default.yml
 
 global:
   type: global

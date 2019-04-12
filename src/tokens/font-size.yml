@@ -26,20 +26,20 @@ props:
   size_xs:
     value: "0.563rem"
 
-  size_m3xxxl:
-    value: "2.074rem"
-  size_m3xxl:
-    value: "1.728rem"
-  size_m3xl:
-    value: "1.440rem"
-  size_m3l:
-    value: "1.200rem"
-  size_m3m:
-    value: "1.000rem"
-  size_m3s:
-    value: "0.833rem"
-  size_m3xs:
-    value: "0.694rem"
+  # size_m3xxxl:
+  #   value: "2.074rem"
+  # size_m3xxl:
+  #   value: "1.728rem"
+  # size_m3xl:
+  #   value: "1.440rem"
+  # size_m3l:
+  #   value: "1.200rem"
+  # size_m3m:
+  #   value: "1.000rem"
+  # size_m3s:
+  #   value: "0.833rem"
+  # size_m3xs:
+  #   value: "0.694rem"
 global:
   type: number
   category: font-size

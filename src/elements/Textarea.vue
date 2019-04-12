@@ -1,5 +1,5 @@
 <template>
-  <component :is="wrapper" :class="['textarea', {'textarea-expand': width === 'expand'}]">
+  <component :is="wrapper" :class="['textarea', { 'textarea-expand': width === 'expand' }]">
     <label :for="id" v-if="label">{{ label }}</label>
     <textarea
       :id="id"
@@ -107,7 +107,7 @@ export default {
 
 <style lang="scss" scoped>
 // Design Tokens with local scope
-$color-placeholder: tint($color-silver, 50%);
+$color-placeholder: tint($color-n100, 50%);
 
 .textarea {
   @include stack-space($space-s);
@@ -123,7 +123,7 @@ $color-placeholder: tint($color-silver, 50%);
     cursor: pointer;
     display: block;
     font-size: $size-s;
-    color: tint($color-rich-black, 20%);
+    color: tint($color-n900, 20%);
     @include stack-space($space-xs);
   }
   textarea {
@@ -136,14 +136,13 @@ $color-placeholder: tint($color-silver, 50%);
     min-height: $space-xxl;
     font-size: $size-m;
     font-family: $font-text;
-    background: $color-white;
+    background: $color-n000;
     border-radius: $radius-default;
-    color: set-text-color($color-rich-black, $color-white);
+    color: set-text-color($color-n900, $color-n000);
     width: 100%;
     margin: 0;
     border: 0;
-    box-shadow: inset 0 1px 0 0 rgba($color-rich-black, 0.07),
-      0 0 0 1px tint($color-rich-black, 80%);
+    box-shadow: inset 0 1px 0 0 rgba($color-n900, 0.07), 0 0 0 1px tint($color-n900, 80%);
     &::-webkit-input-placeholder {
       -webkit-font-smoothing: antialiased;
       color: $color-placeholder;
@@ -158,17 +157,17 @@ $color-placeholder: tint($color-silver, 50%);
     }
     &:hover,
     &.hover {
-      box-shadow: 0 1px 5px 0 rgba($color-rich-black, 0.07), 0 0 0 1px tint($color-rich-black, 60%);
+      box-shadow: 0 1px 5px 0 rgba($color-n900, 0.07), 0 0 0 1px tint($color-n900, 60%);
     }
     &:focus,
     &.focus {
       transition: box-shadow 0.2s ease;
-      box-shadow: inset 0 0 0 1px $color-bleu-de-france, 0 0 0 1px $color-bleu-de-france;
+      box-shadow: inset 0 0 0 1px $color-b300, 0 0 0 1px $color-b300;
       outline: 0;
     }
     &[disabled] {
       -webkit-font-smoothing: antialiased;
-      box-shadow: 0 0 0 1px tint($color-rich-black, 80%);
+      box-shadow: 0 0 0 1px tint($color-n900, 80%);
       background: lighten($color-placeholder, 42%);
       color: tint($color-placeholder, 20%);
       cursor: not-allowed;
@@ -177,7 +176,6 @@ $color-placeholder: tint($color-silver, 50%);
   }
 }
 </style>
-
 
 <docs>
   ```jsx

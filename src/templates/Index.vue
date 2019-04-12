@@ -46,11 +46,11 @@ export default {
 
 <style lang="scss" scoped>
 // Design Tokens with local scope
-$color-template-background: $color-rich-black;
+$color-template-background: $color-n900;
 $color-template-background-top: tint($color-template-background, 5%);
 $color-template-background-bottom: shade($color-template-background, 5%);
-$color-template-text: $color-white;
-$color-template-link: $color-bleu-de-france;
+$color-template-text: $color-n000;
+$color-template-link: $color-b300;
 
 .index {
   @include reset;
@@ -90,7 +90,7 @@ $color-template-link: $color-bleu-de-france;
   }
   a {
     font-family: $font-text;
-    color: $color-bleu-de-france;
+    color: $color-b300;
     text-decoration: underline;
   }
 }

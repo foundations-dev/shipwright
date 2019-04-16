@@ -105,6 +105,8 @@
         }
     },
     "dependencies": {
+        "eslint-config-prettier": "^4.1.0",
+        "eslint-plugin-prettier": "^3.0.1",
         "lodash": "^4.17.11",
         "mini-css-extract-plugin": "^0.4.5",
         "postcss-import": "^12.0.1",

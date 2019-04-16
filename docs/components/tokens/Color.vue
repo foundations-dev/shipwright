@@ -4,14 +4,14 @@
             <h2>Color Grid</h2>
             <div class="grid-container">
                 <div class="container_val">
-                    <p>C</p>
-                    <p>050</p>
-                    <p>075</p>
-                    <p>100</p>
-                    <p>200</p>
-                    <p>300</p>
-                    <p>400</p>
-                    <p>500</p>
+                    <p>value / cat</p>
+                    <p class="val">050</p>
+                    <p class="val">075</p>
+                    <p class="val">100</p>
+                    <p class="val">200</p>
+                    <p class="val">300</p>
+                    <p class="val">400</p>
+                    <p class="val">500</p>
                 </div>
                 <div v-for="cat in categories" :key="cat" class="container_cat">
                     {{ cat }}
@@ -113,15 +113,21 @@ export default {
 
         p {
             margin: 0;
+            &.val {
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
         }
 
-        .container_val {
+        .container_val,
+        .container_cat {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        .container_cat {
+        .container_cat,
+        p {
             text-align: center;
         }
     }

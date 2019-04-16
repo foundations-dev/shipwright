@@ -1,6 +1,9 @@
 #
 # SPACING TOKENS
 # Use these tokens to set padding, margin and position coordinates.
+# combine ideas from https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+# and https://zellwk.com/blog/why-vertical-rhythms/
+# ensure your spacing tokens are based on the"rhythm unit"
 
 props:
   space_xxl:

@@ -22,7 +22,7 @@ $docs-color-text: shade($color-silver, 70%);
 --------------------------------------------- */
 // Base font size
 html {
-  font-size: $size-base;
+  font-size: 18px;
 }
 
 // Background of page
@@ -57,9 +57,9 @@ main section section > div > div[class^="rsg--root"] {
 
 // Link color
 div[class^="rsg--root"] a[class^="rsg--link"] {
-  color: $color-bleu-de-france;
+  color: $color-b300;
   &:hover {
-    color: $color-bleu-de-france-dark;
+    color: $color-n900;
   }
 }
 
@@ -214,9 +214,9 @@ td[class^="rsg--cell"] p {
 // Sidebar logo
 div[class^="rsg--logo"] {
   @include inset-space($space-m);
-  border-bottom: 1px solid rgba($color-white, 0.1);
+  border-bottom: 1px solid rgba($color-n300, 0.1);
   h1 {
-    color: tint($color-bleu-de-france, 90%);
+    color: $color-n900;
     font-weight: $weight-normal;
   }
 }
@@ -225,12 +225,12 @@ div[class^="rsg--logo"] {
 p[class^="rsg--version"] {
   @include inset-squish-space($space-xs);
   margin: $space-xs 0 0;
-  color: $color-bleu-de-france;
-  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  color: $color-n900;
+  font-family: "IBM Plex Mono", Helvetica, Arial, sans-serif;
   font-weight: $weight-normal;
   display: inline-block;
-  line-height: $line-height-xs;
-  border: 1px solid $color-bleu-de-france;
+  line-height: $line-height-m;
+  border: 1px solid $color-n900;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: $size-xs;
@@ -239,12 +239,11 @@ p[class^="rsg--version"] {
 
 // Sidebar search
 div[class^="rsg--search"] input {
-  @include inset-squish-space($space-s);
-  color: $color-white;
+  color: $color-n900;
   border: 1px solid transparent;
-  background: mix($color-bleu-de-france, $color-rich-black, 20%);
+  background: $color-n020;
   &:focus {
-    border: 1px solid $color-bleu-de-france;
+    border: 1px solid $color-b300;
     &::-webkit-textfield-decoration-container {
       display: none !important;
     }
@@ -253,21 +252,22 @@ div[class^="rsg--search"] input {
     }
   }
   &::-webkit-input-placeholder {
-    color: rgba(mix($color-white, $color-bleu-de-france, 50%), 0.35);
+    color: $color-b100;
+    opacity: 0.5;
   }
   &:-ms-input-placeholder {
-    color: rgba(mix($color-white, $color-bleu-de-france, 50%), 0.35);
+    color: $color-b100;
+    opacity: 0.5;
   }
   &::-moz-placeholder {
-    color: rgba(mix($color-white, $color-bleu-de-france, 50%), 0.35);
-    opacity: 1;
+    color: $color-b100;
+    opacity: 0.5;
   }
 }
 
 // Sets sidebar background
 div[class^="rsg--sidebar"] {
-  background: mix($color-bleu-de-france, $color-rich-black, 5%);
-  border: 0;
+  background: $color-n000;
   @media (max-width: #{$docs-breakpoint}) {
     padding-bottom: $space-l;
   }
@@ -291,18 +291,19 @@ div[class^="rsg--sidebar"] {
   a[class^="rsg--link"] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding: $space-xx-small $space-m;
-    font-weight: $weight-semi-bold;
-    color: $color-bleu-de-france;
+    border-left: 0.25rem solid transparent;
+    padding: $space-xx-small $space-l;
+    font-weight: $weight-normal;
+    color: $color-n900;
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     &:hover {
-      color: $color-bleu-de-france-lighter;
+      color: $color-b100;
     }
     &:active {
-      color: $color-bleu-de-france-dark;
+      color: $color-n900;
     }
   }
 
@@ -313,7 +314,9 @@ div[class^="rsg--sidebar"] {
     }
     & > a,
     & > a:hover {
-      color: tint($color-bleu-de-france, 80%);
+      color: $color-b300;
+      border-left: $color-b300 solid;
+      font-weight: bold;
     }
   }
 
@@ -405,7 +408,7 @@ thead[class^="rsg--tableHead"] {
 pre[class^="rsg--pre"],
 .vueds-html.cm-s-night.CodeMirror,
 .react-codemirror2 .CodeMirror.CodeMirror {
-  background: mix($color-bleu-de-france, $color-rich-black, 10%);
+  background: mix($color-b300, $color-rich-black, 10%);
   border-bottom-left-radius: $radius-default;
   border-bottom-right-radius: $radius-default;
   box-sizing: border-box;
@@ -458,16 +461,16 @@ div[class^="rsg--tab"] {
       line-height: $line-height-s;
       @include inset-squish-space($space-s);
       cursor: pointer;
-      background: mix($color-bleu-de-france, $color-rich-black, 50%);
+      background: mix($color-b300, $color-rich-black, 50%);
       color: $color-white;
       &:active {
-        background: mix($color-bleu-de-france, $color-rich-black, 45%);
+        background: mix($color-b300, $color-rich-black, 45%);
       }
       &:focus {
         outline: none;
       }
       &--active {
-        background: mix($color-bleu-de-france, $color-rich-black, 40%);
+        background: mix($color-b300, $color-rich-black, 40%);
         box-shadow: inset 0 2px 8px rgba($color-rich-black, 0.2);
       }
     }
@@ -498,7 +501,7 @@ div[class^="rsg--tab"] {
 .cm-s-night span.cm-tag,
 .hljs-tag,
 .hljs-name {
-  color: $color-bleu-de-france-light !important;
+  color: $color-b100 !important;
 }
 .hljs-attribute,
 .hljs-keyword,
@@ -583,7 +586,7 @@ div[class^="rsg--root"] div[class^="rsg--tabs"] {
     color: $color-rich-black;
   }
   &-prototype {
-    background: $color-bleu-de-france;
+    background: $color-b300;
     color: $color-white;
   }
   &-deprecated {

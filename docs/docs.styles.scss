@@ -238,10 +238,14 @@ p[class^="rsg--version"] {
 }
 
 // Sidebar search
+div[class^="rsg--search"] {
+  border-bottom: 1px solid $color-n030;
+}
+
 div[class^="rsg--search"] input {
   color: $color-n900;
   border: 1px solid transparent;
-  background: $color-n020;
+  background: $color-n000;
   &:focus {
     border: 1px solid $color-b300;
     &::-webkit-textfield-decoration-container {
@@ -252,15 +256,15 @@ div[class^="rsg--search"] input {
     }
   }
   &::-webkit-input-placeholder {
-    color: $color-b100;
+    color: $color-b300;
     opacity: 0.5;
   }
   &:-ms-input-placeholder {
-    color: $color-b100;
+    color: $color-b300;
     opacity: 0.5;
   }
   &::-moz-placeholder {
-    color: $color-b100;
+    color: $color-b300;
     opacity: 0.5;
   }
 }
@@ -292,7 +296,7 @@ div[class^="rsg--sidebar"] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border-left: 0.25rem solid transparent;
-    padding: $space-xx-small $space-l;
+    padding: $space-s $space-l;
     font-weight: $weight-normal;
     color: $color-n900;
     display: block;

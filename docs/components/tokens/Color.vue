@@ -2,12 +2,27 @@
     <div>
         <div class="color-grid">
             <h2>Color Grid</h2>
-            <div
-                v-for="(prop, index) in neutralColors"
-                :key="index"
-                class="block"
-                :style="{ backgroundColor: prop.value }"
-            ></div>
+            <div class="grid-container">
+                <div class="container_val">
+                    <p>C</p>
+                    <p>050</p>
+                    <p>075</p>
+                    <p>100</p>
+                    <p>200</p>
+                    <p>300</p>
+                    <p>400</p>
+                    <p>500</p>
+                </div>
+                <div v-for="cat in categories" :key="cat" class="container_cat">
+                    {{ cat }}
+                    <div
+                        v-for="(prop, index) in getCategory(cat)"
+                        :key="index"
+                        class="block"
+                        :style="{ backgroundColor: prop.value }"
+                    ></div>
+                </div>
+            </div>
         </div>
         <div class="colors">
             <div
@@ -48,6 +63,7 @@ export default {
     data() {
         return {
             tokens: this.orderData(designTokens.props),
+            categories: ["R", "Y", "G", "T", "B", "P"],
         }
     },
     computed: {
@@ -60,6 +76,17 @@ export default {
             const neutrals = this.getCategory("N")
             return neutrals
         },
+        featureColors() {
+            const features = [
+                ...this.getCategory("R"),
+                ...this.getCategory("Y"),
+                ...this.getCategory("G"),
+                ...this.getCategory("T"),
+                ...this.getCategory("B"),
+                ...this.getCategory("P"),
+            ]
+            return features
+        },
     },
 }
 </script>
@@ -71,9 +98,39 @@ export default {
 --------------------------------------------- */
 
 .color-grid {
+    .cats {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .grid-container {
+        display: grid;
+        max-width: 1200px;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+
+        p {
+            margin: 0;
+        }
+
+        .container_val {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container_cat {
+            text-align: center;
+        }
+    }
+
     .block {
         width: 100px;
         height: 50px;
+        border-radius: 5px;
+        margin: 20px 0;
     }
 }
 

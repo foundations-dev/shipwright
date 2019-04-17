@@ -1,7 +1,7 @@
 ### Resources
 
--   Vue Design System's Getting Started Guide: https://github.com/viljamis/vue-design-system/wiki
--   Editing Documentation: https://vue-styleguidist.github.io/Documenting.html#code-comments
+-   [Vue Design System's Getting Started Guide](https://github.com/viljamis/vue-design-system/wiki)
+-   [Editing Documentation](https://vue-styleguidist.github.io/Documenting.html#code-comments)
 
 ## Introduction
 

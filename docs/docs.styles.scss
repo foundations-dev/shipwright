@@ -110,7 +110,7 @@ div[class^="rsg--wrapper"] > h1[class^="rsg--heading"] a {
 // Heading, level 2
 h2[class^="rsg--heading"] {
     color: $docs-color-heading;
-    border-bottom: 1px solid $color-n050;
+    border-bottom: 1px solid $color-n030;
     padding: $space-xl 0 $space-xs;
     margin: 0 0 $space-l;
     font-size: $size-xl;
@@ -190,6 +190,11 @@ p[class^="rsg--para"] {
     }
 }
 
+// Horizontal lines
+hr {
+    color: $color-n030;
+}
+
 // Type layout adjustments
 div[class^="rsg--docs"],
 p[class^="rsg--para"],
@@ -216,7 +221,7 @@ td[class^="rsg--cell"] p {
 // Sidebar logo
 div[class^="rsg--logo"] {
     @include inset-space($space-m);
-    border-bottom: 1px solid rgba($color-n300, 0.1);
+    border-bottom: 1px solid $color-n030;
     h1 {
         color: $docs-color-heading;
         font-weight: $weight-semi-bold;
@@ -306,7 +311,7 @@ div[class^="rsg--sidebar"] {
         overflow: hidden;
         text-overflow: ellipsis;
         &:hover {
-            color: $color-b300;
+            color: $color-b400;
         }
         &:active {
             color: $color-n900;
@@ -328,6 +333,11 @@ div[class^="rsg--sidebar"] {
     // First level active link
     .vueds-active > a[class^="rsg--link"] {
         border-left: $color-b400 solid;
+    }
+
+    // Padding for nav
+    nav {
+        padding-top: $space-m;
     }
 
     // Sidebar list

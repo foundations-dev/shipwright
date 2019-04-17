@@ -15,8 +15,8 @@ $docs-grey-dark: #4d5865;
 $docs-status-ready: #7cb518;
 $docs-breakpoint: 800px;
 $docs-breakpoint-small: 600px;
-$docs-color-heading: rgb(30, 30, 30);
-$docs-color-text: shade($color-silver, 70%);
+$docs-color-heading: $color-n700;
+$docs-color-text: $color-n900;
 
 /* BASE
 --------------------------------------------- */
@@ -34,6 +34,8 @@ div.rsg--root-1 {
 main[class^="rsg--content"] {
     display: block; /* IE11 fix */
     padding: $space-s $space-xl;
+    max-width: 800px;
+
     @media (max-width: #{$docs-breakpoint}) {
         padding: $space-s $space-m;
     }
@@ -57,7 +59,7 @@ main section section > div > div[class^="rsg--root"] {
 
 // Link color
 div[class^="rsg--root"] a[class^="rsg--link"] {
-    color: $color-b300;
+    color: $color-b400;
     &:hover {
         color: $color-n900;
     }
@@ -72,8 +74,7 @@ div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
     line-height: $line-height-s;
     padding: $space-xl $space-xl;
     width: calc(100% + #{$space-xl * 2});
-    margin: -#{$space-s} -#{$space-xl} $space-l -#{$space-xl};
-    background: $color-cloud;
+    margin: -#{$space-s} -#{$space-xl} 0 -#{$space-xl};
     font-size: $size-xxxl;
     a:hover {
         text-decoration: none;
@@ -85,7 +86,7 @@ div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
     @media (max-width: #{$docs-breakpoint}) {
         font-size: $size-xl / 1.2;
         width: calc(100% + #{$space-xl});
-        padding: $space-l $space-m;
+        padding: $space-xl $space-m;
         margin: -#{$space-s} -#{$space-m} $space-m;
     }
 }
@@ -98,7 +99,7 @@ header[class^="rsg--header"] {
 // Links inside h1
 div[class^="rsg--wrapper"] > h1[class^="rsg--heading"] a {
     font-weight: $weight-normal;
-    color: $color-oxford-blue;
+    color: $color-n900;
     letter-spacing: -1px;
     &:hover {
         text-decoration: none;
@@ -108,9 +109,10 @@ div[class^="rsg--wrapper"] > h1[class^="rsg--heading"] a {
 
 // Heading, level 2
 h2[class^="rsg--heading"] {
-    border-bottom: 1px solid $docs-grey;
-    padding-bottom: $space-s;
-    margin: $space-l 0 $space-m;
+    color: $docs-color-heading;
+    border-bottom: 1px solid $color-n050;
+    padding: $space-xl 0 $space-xs;
+    margin: 0 0 $space-l;
     font-size: $size-xl;
     line-height: $line-height-s;
     font-weight: $weight-normal;
@@ -132,11 +134,11 @@ h3[class^="rsg--heading"],
 h3[class^="rsg--heading"] a {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
-    font-weight: $weight-light;
+    font-weight: $weight-normal;
     line-height: $line-height-m;
-    margin: 0 0 $space-l;
+    margin: 0 0 $space-m;
     font-size: $size-l;
-    color: $docs-color-text;
+    color: $docs-color-heading;
     @media (max-width: #{$docs-breakpoint}) {
         font-size: $size-l / 1.2;
         margin: 0 0 $space-m;
@@ -160,7 +162,7 @@ p[class^="rsg--para"] {
     -moz-osx-font-smoothing: grayscale;
     color: $docs-color-text;
     margin-bottom: $space-s;
-    line-height: $line-height-m;
+    line-height: $line-height-l;
     font-weight: $weight-normal;
     font-size: $size-m;
     strong a[class^="rsg--link"] {
@@ -193,8 +195,8 @@ div[class^="rsg--docs"],
 p[class^="rsg--para"],
 h3[class^="rsg--heading"],
 h4[class^="rsg--heading"] {
-    max-width: 800px;
-    width: 75%;
+    max-width: 100%;
+    width: 100%;
     p[class^="rsg--para"] {
         width: 100%;
     }
@@ -216,8 +218,8 @@ div[class^="rsg--logo"] {
     @include inset-space($space-m);
     border-bottom: 1px solid rgba($color-n300, 0.1);
     h1 {
-        color: $color-n900;
-        font-weight: $weight-normal;
+        color: $docs-color-heading;
+        font-weight: $weight-semi-bold;
     }
 }
 
@@ -247,7 +249,7 @@ div[class^="rsg--search"] input {
     border: 1px solid transparent;
     background: $color-n000;
     &:focus {
-        border: 1px solid $color-b300;
+        border: 1px solid $color-b400;
         &::-webkit-textfield-decoration-container {
             display: none !important;
         }
@@ -256,15 +258,15 @@ div[class^="rsg--search"] input {
         }
     }
     &::-webkit-input-placeholder {
-        color: $color-b300;
+        color: $color-b400;
         opacity: 0.5;
     }
     &:-ms-input-placeholder {
-        color: $color-b300;
+        color: $color-b400;
         opacity: 0.5;
     }
     &::-moz-placeholder {
-        color: $color-b300;
+        color: $color-b400;
         opacity: 0.5;
     }
 }
@@ -304,7 +306,7 @@ div[class^="rsg--sidebar"] {
         overflow: hidden;
         text-overflow: ellipsis;
         &:hover {
-            color: $color-b200;
+            color: $color-b300;
         }
         &:active {
             color: $color-n900;
@@ -318,10 +320,14 @@ div[class^="rsg--sidebar"] {
         }
         & > a,
         & > a:hover {
-            color: $color-b300;
-            border-left: $color-b300 solid;
+            color: $color-b400;
             font-weight: bold;
         }
+    }
+
+    // First level active link
+    .vueds-active > a[class^="rsg--link"] {
+        border-left: $color-b400 solid;
     }
 
     // Sidebar list
@@ -345,7 +351,8 @@ div[class^="rsg--sidebar"] {
 
             // Sidebar second level link
             a[class*="rsg--link"] {
-                font-size: $size-m;
+                padding: $space-xxs $space-l;
+                font-size: $size-s;
                 font-weight: $weight-normal;
                 -webkit-font-smoothing: subpixel-antialiased;
                 -moz-osx-font-smoothing: auto;
@@ -412,7 +419,7 @@ thead[class^="rsg--tableHead"] {
 pre[class^="rsg--pre"],
 .vueds-html.cm-s-night.CodeMirror,
 .react-codemirror2 .CodeMirror.CodeMirror {
-    background: mix($color-b300, $color-rich-black, 10%);
+    background: mix($color-b400, $color-rich-black, 10%);
     border-bottom-left-radius: $radius-default;
     border-bottom-right-radius: $radius-default;
     box-sizing: border-box;
@@ -465,16 +472,16 @@ div[class^="rsg--tab"] {
             line-height: $line-height-s;
             @include inset-squish-space($space-s);
             cursor: pointer;
-            background: mix($color-b300, $color-rich-black, 50%);
+            background: mix($color-b400, $color-rich-black, 50%);
             color: $color-white;
             &:active {
-                background: mix($color-b300, $color-rich-black, 45%);
+                background: mix($color-b400, $color-rich-black, 45%);
             }
             &:focus {
                 outline: none;
             }
             &--active {
-                background: mix($color-b300, $color-rich-black, 40%);
+                background: mix($color-b400, $color-rich-black, 40%);
                 box-shadow: inset 0 2px 8px rgba($color-rich-black, 0.2);
             }
         }
@@ -590,7 +597,7 @@ div[class^="rsg--root"] div[class^="rsg--tabs"] {
         color: $color-rich-black;
     }
     &-prototype {
-        background: $color-b300;
+        background: $color-b400;
         color: $color-white;
     }
     &-deprecated {

@@ -1,6 +1,9 @@
 <template>
     <div class="font-sizes">
-        <div class="size-base" v-if>{{ this.size_base }}</div>
+        <p></p>
+        <div class="size-base font">
+            ${{ this.size_base.name.replace(/_/g, "-") }} <span>({{ this.size_base.value }})</span>
+        </div>
         <div
             v-for="(prop, index) in tokens"
             :key="index"
@@ -28,13 +31,17 @@ export default {
     methods: {
         orderData: function(data) {
             let order = orderBy(data, "value", "desc")
+            // filter out size_base
+            order = order.filter(e => {
+                return e.name != "size_base"
+            })
             return order
         },
     },
     data() {
         return {
             tokens: this.orderData(designTokens.props),
-            size_base: designTokens.props.size_base.value,
+            size_base: designTokens.props.size_base,
         }
     },
 }
@@ -47,17 +54,18 @@ export default {
 --------------------------------------------- */
 
 .font-sizes {
-    margin-top: $space-l;
+    margin: $space-l;
     overflow: hidden;
     width: 100%;
 }
+
 .font {
     @include reset;
     font-family: $font-heading;
     font-weight: $weight-normal;
     line-height: $line-height-xs;
     color: $color-rich-black;
-    margin-bottom: $space-s;
+    margin-bottom: $space-m;
     font-style: normal;
     span {
         letter-spacing: -0.02em;
@@ -67,6 +75,11 @@ export default {
         user-select: none;
         font-style: normal;
     }
+}
+
+.size-base {
+    margin: $space-xxl 0;
+    text-align: center;
 }
 </style>
 

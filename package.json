@@ -22,7 +22,7 @@
         "node:build:system": "node ./build/build-system.js",
         "styleguide": "vue-styleguidist server --open --config ./config/docs.config.js",
         "styleguide:build": "vue-styleguidist build --config ./config/docs.config.js",
-        "theo": "theo ./src/tokens/tokens.yml --transform web --format map.scss,scss,raw.json,json --dest ./src/assets/tokens",
+        "theo": "theo ./src/tokens/tokens.yml --transform aura --format map.scss,scss,raw.json,json --dest ./src/assets/tokens",
         "theo:onchange": "onchange \"./src/tokens/*.yml\" -- npm run theo",
         "test": "npm-run-all theo unit"
     },

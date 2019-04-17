@@ -332,7 +332,7 @@ div[class^="rsg--sidebar"] {
 
     // First level active link
     .vueds-active > a[class^="rsg--link"] {
-        border-left: $color-b400 solid;
+        border-left: $color-b400 solid 4px;
     }
 
     // Padding for nav
@@ -364,6 +364,7 @@ div[class^="rsg--sidebar"] {
                 padding: $space-xxs $space-l;
                 font-size: $size-s;
                 font-weight: $weight-normal;
+                border: 0; // remove active border
                 -webkit-font-smoothing: subpixel-antialiased;
                 -moz-osx-font-smoothing: auto;
                 @media (max-width: #{$docs-breakpoint-small}) {

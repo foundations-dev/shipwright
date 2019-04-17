@@ -1,7 +1,15 @@
-### Resources
+<!-- toc -->
+
+-   [Finding components](#introduction)
+
+<!-- tocstop -->
+
+#### Resources
 
 -   [Vue Design System's Getting Started Guide](https://github.com/viljamis/vue-design-system/wiki)
 -   [Editing Documentation](https://vue-styleguidist.github.io/Documenting.html#code-comments)
+
+---
 
 ## Introduction
 
@@ -20,5 +28,10 @@ This is the most important resource for getting started. I don't feel great abou
 
 ## V1.0.0 Release
 
-[//]: # "## System Overview"
-[//]: # "```<components />```"
+Version 1 includes the basic building blocks of any website, as well as the _Design Principles_ that will guide this endeavor.
+
+These basics are in the form of _tokens_ and include:
+
+-   spacing
+-   font size
+-   color

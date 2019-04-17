@@ -3,7 +3,7 @@
         <div class="color-grid">
             <div class="grid-container">
                 <div class="container_val">
-                    <p>value / cat</p>
+                    <p>val / cat</p>
                     <p class="val">050</p>
                     <p class="val">075</p>
                     <p class="val">100</p>
@@ -84,8 +84,9 @@ export default {
 --------------------------------------------- */
 
 .color-grid {
-    margin-top: $space-xxl;
+    margin-top: $space-xl;
     margin-bottom: $space-xl;
+
     .cats {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -111,6 +112,7 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: $color-n100;
         }
 
         .container_cat,
@@ -127,54 +129,6 @@ export default {
     }
 }
 
-.colors {
-    margin-top: $space-l;
-    display: block;
-    width: 100%;
-    @supports (display: grid) {
-        display: grid;
-        max-width: 1200px;
-        align-content: stretch;
-        justify-content: left;
-        grid-template-columns:
-            calc(20% - #{$space-m})
-            calc(20% - #{$space-m})
-            calc(20% - #{$space-m})
-            calc(20% - #{$space-m})
-            calc(20% - #{$space-m});
-        grid-column-gap: $space-m;
-        @media (max-width: 1300px) {
-            grid-template-columns:
-                calc(25% - #{$space-m})
-                calc(25% - #{$space-m})
-                calc(25% - #{$space-m})
-                calc(25% - #{$space-m});
-        }
-        @media (max-width: 1100px) {
-            grid-template-columns:
-                calc(33.333% - #{$space-m})
-                calc(33.333% - #{$space-m})
-                calc(33.333% - #{$space-m});
-        }
-        @media (max-width: 900px) {
-            grid-template-columns:
-                calc(50% - #{$space-m})
-                calc(50% - #{$space-m});
-        }
-        @media (max-width: 400px) {
-            grid-template-columns: 100%;
-        }
-    }
-}
-.swatch {
-    @include stack-space($space-s);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    height: $space-xxl;
-    margin-left: -#{$space-s};
-    margin-top: -#{$space-s};
-    width: calc(100% + #{$space-l});
-    float: left;
-}
 h3 {
     @include reset;
     @include stack-space($space-xs);
@@ -182,47 +136,6 @@ h3 {
     line-height: 1.2;
     width: 100%;
     float: left;
-}
-.color {
-    @include reset;
-    @include inset-space($space-s);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-bottom: $space-m;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    font-size: $size-s;
-    font-family: $font-text;
-    color: $color-rich-black;
-    border-radius: $radius-default;
-    overflow: hidden;
-    text-align: left;
-    @supports (display: grid) {
-        width: 100%;
-        float: left;
-    }
-    @media (max-width: 400px) {
-        margin-bottom: $space-m;
-    }
-    &:hover {
-        span {
-            color: $color-rich-black;
-            em {
-                color: $color-silver;
-            }
-        }
-    }
-    span {
-        margin-bottom: $space-xs;
-        line-height: 1.3;
-        color: $color-silver;
-        font-size: $size-s;
-        width: 100%;
-        float: left;
-        em {
-            user-select: none;
-            font-style: normal;
-        }
-    }
 }
 </style>
 

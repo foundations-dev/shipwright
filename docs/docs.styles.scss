@@ -74,7 +74,7 @@ div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
     line-height: $line-height-s;
     padding: $space-xl $space-xl;
     width: calc(100% + #{$space-xl * 2});
-    margin: -#{$space-s} -#{$space-xl} 0 -#{$space-xl};
+    margin: $space-m -#{$space-xl} 0 -#{$space-xl};
     font-size: $size-xxxl;
     a:hover {
         text-decoration: none;

@@ -76,11 +76,11 @@ Then, pass the data:
 
 ```javascript
 export default {
-  data() {
-    return {
-      tokens: designTokens.props,
-    }
-  },
+    data() {
+        return {
+            tokens: designTokens.props,
+        }
+    },
 }
 ```
 
@@ -88,7 +88,7 @@ Once done, you can utilize tokens inside `<template>` like this:
 
 ```html
 <template>
-  <Thing :style="{color: tokens.color_vermilion.value}" />
+    <Thing :style="{color: tokens.color_vermilion.value}" />
 </template>
 ```
 
@@ -96,10 +96,10 @@ Once done, you can utilize tokens inside `<template>` like this:
 
 ```scss
 .wrapper {
-  padding: $space-l;
-  @media #{$media-query-l} {
-    padding: $space-xl;
-  }
+    padding: $space-l;
+    @media #{$media-query-l} {
+        padding: $space-xl;
+    }
 }
 ```
 

@@ -134,9 +134,9 @@ h3[class^="rsg--heading"],
 h3[class^="rsg--heading"] a {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
-    font-weight: $weight-normal;
+    font-weight: $weight-semi-bold;
     line-height: $line-height-m;
-    margin: 0 0 $space-m;
+    margin: $space-l 0 $space-xs;
     font-size: $size-l;
     color: $docs-color-heading;
     @media (max-width: #{$docs-breakpoint}) {
@@ -191,8 +191,9 @@ p[class^="rsg--para"] {
 }
 
 // Horizontal lines
-hr {
-    color: $color-n030;
+hr[class^="rsg--hr"] {
+    border-bottom: 2px solid $color-b050;
+    margin-top: $space-m;
 }
 
 // Type layout adjustments
@@ -699,7 +700,7 @@ a[href="#private-components"] + ul {
 
 // Hide Private components and placeholder sections
 ul a[href*="/#/Getting Started/Components"],
-ul a[href*="/#/Design Tokens/FontColors"],
+ul a[href*="/#/Design Tokens/FeatureColors"],
 ul a[href*="/#/Design Tokens/NeutralColors"],
 ul a[href*="/#/Design Tokens/Spacing"],
 ul a[href*="/#/Design Tokens/FontSize"],

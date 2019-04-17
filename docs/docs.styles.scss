@@ -34,7 +34,7 @@ div.rsg--root-1 {
 main[class^="rsg--content"] {
     display: block; /* IE11 fix */
     padding: $space-s $space-xl;
-    max-width: 800px;
+    max-width: 900px;
 
     @media (max-width: #{$docs-breakpoint}) {
         padding: $space-s $space-m;
@@ -111,8 +111,8 @@ div[class^="rsg--wrapper"] > h1[class^="rsg--heading"] a {
 h2[class^="rsg--heading"] {
     color: $docs-color-heading;
     border-bottom: 1px solid $color-n030;
-    padding: $space-xl 0 $space-xs;
-    margin: 0 0 $space-l;
+    padding: 0 0 $space-xs;
+    margin: $space-xl 0 $space-l;
     font-size: $size-xl;
     line-height: $line-height-s;
     font-weight: $weight-normal;

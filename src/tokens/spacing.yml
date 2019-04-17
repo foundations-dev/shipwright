@@ -6,20 +6,20 @@
 # ensure your spacing tokens are based on the"rhythm unit"
 
 props:
-  space_xxl:
-    value: "3rem"
-  space_xl:
-    value: "2rem"
-  space_l:
-    value: "1.5rem"
-  space_m:
-    value: "1rem"
-  space_s:
-    value: "0.75rem"
-  space_xs:
-    value: "0.5rem"
-  space_xxs:
-    value: "0.25rem"
+    space_xxl:
+        value: "4rem"
+    space_xl:
+        value: "2rem"
+    space_l:
+        value: "1.5rem"
+    space_m:
+        value: "1rem"
+    space_s:
+        value: "0.75rem"
+    space_xs:
+        value: "0.5rem"
+    space_xxs:
+        value: "0.25rem"
 global:
-  type: number
-  category: space
+    type: number
+    category: space

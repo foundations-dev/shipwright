@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="color-grid">
-            <h2>Color Grid</h2>
             <div class="grid-container">
                 <div class="container_val">
                     <p>value / cat</p>
@@ -22,19 +21,6 @@
                         :style="{ backgroundColor: prop.value }"
                     ></div>
                 </div>
-            </div>
-        </div>
-        <div class="colors">
-            <div
-                v-for="(prop, index) in colorTokens"
-                :key="index"
-                class="color"
-                :class="prop.category"
-            >
-                <div class="swatch" :style="{ backgroundColor: prop.value }" />
-                <h3>{{ prop.name.replace(/_/g, " ").replace(/color/g, "") }}</h3>
-                <span> <em>RGB:</em> {{ prop.value }} </span>
-                <span> <em>SCSS:</em> ${{ prop.name.replace(/_/g, "-") }} </span>
             </div>
         </div>
     </div>
@@ -98,6 +84,8 @@ export default {
 --------------------------------------------- */
 
 .color-grid {
+    margin-top: $space-xxl;
+    margin-bottom: $space-xl;
     .cats {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -106,7 +94,6 @@ export default {
     .grid-container {
         display: grid;
         max-width: 1200px;
-        grid-template-rows: repeat(7, 1fr);
         grid-template-columns: repeat(7, 1fr);
         grid-gap: 20px;
         justify-items: center;

@@ -31,7 +31,7 @@ import designTokens from "@/assets/tokens/tokens.raw.json"
 import orderBy from "lodash/orderBy"
 
 export default {
-    name: "Color",
+    name: "NeutralColors",
     methods: {
         orderData: function(data) {
             // let byValue = orderBy(data, "value", "asc")

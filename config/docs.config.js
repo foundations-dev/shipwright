@@ -79,7 +79,8 @@ module.exports = {
             exampleMode: "hide",
             usageMode: "hide",
             components: () => [
-                "../docs/components/tokens/Color.vue",
+                "../docs/components/tokens/FeatureColors.vue",
+                "../docs/components/tokens/NeutralColors.vue",
                 "../docs/components/tokens/FontSize.vue",
                 "../docs/components/tokens/Spacing.vue",
                 "../docs/components/tokens/All.vue",

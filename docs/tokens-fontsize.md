@@ -1,5 +1,3 @@
-## Font Size
-
 ```
 <font-size />
 ```

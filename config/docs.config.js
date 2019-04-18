@@ -101,19 +101,19 @@ module.exports = {
             ],
             sections: [
                 {
-                    name: "", // I'll keep token names in the markup for now
+                    name: "Colors",
                     content: "../docs/tokens-color.md",
                     exampleMode: "hide",
                     usageMode: "hide",
                 },
                 {
-                    name: "",
+                    name: "Font Size",
                     content: "../docs/tokens-fontsize.md",
                     exampleMode: "hide",
                     usageMode: "hide",
                 },
                 {
-                    name: "",
+                    name: "Spacing",
                     content: "../docs/tokens-spacing.md",
                     exampleMode: "hide",
                     usageMode: "hide",

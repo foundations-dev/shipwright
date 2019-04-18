@@ -1,5 +1,3 @@
-## Spacing
-
 some text about spacing
 
 ```

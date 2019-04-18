@@ -67,8 +67,9 @@ div[class^="rsg--root"] a[class^="rsg--link"] {
 
 // Main headings
 // (includes h2 as well since in component views that’s the first heading)
-div[class^="rsg--wrapper"] > h1[class^="rsg--heading"],
-div[class^="rsg--wrapper"] > h2[class^="rsg--heading"] {
+div[class^="rsg--wrapper"] > h1[class^="rsg--heading"]
+// div[class^="rsg--wrapper"] > h2[class^="rsg--heading"]
+ {
     display: block;
     border: 0;
     line-height: $line-height-s;

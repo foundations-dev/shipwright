@@ -72,10 +72,24 @@ module.exports = {
         //   exampleMode: "hide",
         //   usageMode: "hide",
         // },
+        // {
+        //     name: "Design Tokens",
+        //     content: "../docs/tokens.md",
+        //     sectionDepth: 1,
+        //     exampleMode: "hide",
+        //     usageMode: "hide",
+        //     components: () => [
+        //         "../docs/components/tokens/FeatureColors.vue",
+        //         "../docs/components/tokens/NeutralColors.vue",
+        //         "../docs/components/tokens/FontSize.vue",
+        //         "../docs/components/tokens/Spacing.vue",
+        //         "../docs/components/tokens/All.vue",
+        //     ],
+        // },
         {
             name: "Design Tokens",
-            content: "../docs/tokens.md",
-            sectionDepth: 1,
+            //pagePerSection: false,
+            sectionDepth: 0, //this is what's buggy, its causing empty component titles to appear
             exampleMode: "hide",
             usageMode: "hide",
             components: () => [
@@ -84,20 +98,6 @@ module.exports = {
                 "../docs/components/tokens/FontSize.vue",
                 "../docs/components/tokens/Spacing.vue",
                 "../docs/components/tokens/All.vue",
-            ],
-        },
-        {
-            name: "Design Tokens (New)",
-            //pagePerSection: false,
-            sectionDepth: 0, //this is what's buggy
-            exampleMode: "hide",
-            usageMode: "hide",
-            components: () => [
-                "../docs/components/tokens/FeatureColors.vue",
-                "../docs/components/tokens/NeutralColors.vue",
-                // "../docs/components/tokens/FontSize.vue",
-                // "../docs/components/tokens/Spacing.vue",
-                // "../docs/components/tokens/All.vue",
             ],
             sections: [
                 {
@@ -109,6 +109,12 @@ module.exports = {
                 {
                     name: "Font Size",
                     content: "../docs/tokens-fontsize.md",
+                    exampleMode: "hide",
+                    usageMode: "hide",
+                },
+                {
+                    name: "Spacing",
+                    content: "../docs/tokens-spacing.md",
                     exampleMode: "hide",
                     usageMode: "hide",
                 },

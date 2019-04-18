@@ -695,6 +695,8 @@ div[class^="rsg--toolbar"] {
 .hide-private + div,
 div[id*="FeatureColors"],
 div[id*="NeutralColors"],
+div[id*="FontSize"],
+div[id*="Spacing"],
 a[href="#private-components"],
 a[href="#private-components"] + ul {
     display: none !important;
@@ -702,11 +704,11 @@ a[href="#private-components"] + ul {
 
 // Hide Private components and placeholder sections
 ul a[href*="/#/Getting Started/Components"],
-ul a[href*="/#/Design Tokens (New)/FeatureColors"],
-ul a[href*="/#/Design Tokens (New)/NeutralColors"],
-ul a[href*="/#/Design Tokens/Spacing"],
-ul a[href*="/#/Design Tokens/FontSize"],
-ul a[href*="/#/Design Tokens/All"],
+ul a[href*="/#/Design Tokens?id=featurecolors"],
+ul a[href*="/#/Design Tokens?id=neutralcolors"],
+ul a[href*="/#/Design Tokens?id=spacing-1"],
+ul a[href*="/#/Design Tokens?id=fontsize"],
+ul a[href*="/#/Design Tokens?id=all"],
 ul a[href*="/#/Private Components"] {
     display: none !important;
 }

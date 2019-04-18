@@ -1,4 +1,4 @@
-## Color Palette
+## Color
 
 ### Neutral Colors
 

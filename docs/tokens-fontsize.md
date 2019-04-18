@@ -1,4 +1,4 @@
-## Font Sizes
+## Font Size
 
 ```
 <font-size />

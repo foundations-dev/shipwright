@@ -86,6 +86,34 @@ module.exports = {
                 "../docs/components/tokens/All.vue",
             ],
         },
+        {
+            name: "Design Tokens (New)",
+            //pagePerSection: false,
+            sectionDepth: 0, //this is what's buggy
+            exampleMode: "hide",
+            usageMode: "hide",
+            components: () => [
+                "../docs/components/tokens/FeatureColors.vue",
+                "../docs/components/tokens/NeutralColors.vue",
+                // "../docs/components/tokens/FontSize.vue",
+                // "../docs/components/tokens/Spacing.vue",
+                // "../docs/components/tokens/All.vue",
+            ],
+            sections: [
+                {
+                    name: "Colors",
+                    content: "../docs/tokens-color.md",
+                    exampleMode: "hide",
+                    usageMode: "hide",
+                },
+                {
+                    name: "Font Size",
+                    content: "../docs/tokens-fontsize.md",
+                    exampleMode: "hide",
+                    usageMode: "hide",
+                },
+            ],
+        },
         // {
         //     name: "Elements",
         //     content: "../docs/elements.md",

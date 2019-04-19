@@ -17,8 +17,8 @@ module.exports = {
         maxWidth: "100%",
         sidebarWidth: 240,
         fontFamily: {
-            base: ["IBM Plex Sans", "Helvetica", "Arial", "sans-serif"],
-            monospace: ["Consolas", "'Liberation Mono'", "Menlo", "monospace"],
+            base: ["IBM Plex Serif", "Helvetica", "Arial", "serif"],
+            monospace: ["IBM Plex Mono", "'Liberation Mono'", "Menlo", "monospace"],
         },
     },
     renderRootJsx: path.join(__dirname, "../docs/components/Preview.js"),

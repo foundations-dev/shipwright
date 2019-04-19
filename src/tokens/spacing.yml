@@ -5,21 +5,27 @@
 # and https://zellwk.com/blog/why-vertical-rhythms/
 # ensure your spacing tokens are based on the"rhythm unit"
 
+# https://codepen.io/ethersystem/pen/pdaaMj
+# https://medium.com/@ethersystem/generating-design-system-spacing-aa69714160bc
+# https://ether.thescenery.co/spacing/
+# Fibbanocci
+
 props:
+    # space_xxxl:
+    #   value: ""
     space_xxl:
-        value: "4rem"
+        value: "6.5ex"
     space_xl:
-        value: "2rem"
+        value: "4ex"
     space_l:
-        value: "1.5rem"
+        value: "2.5ex"
     space_m:
-        value: "1rem"
+        value: "1.5ex"
     space_s:
-        value: "0.75rem"
+        value: "1ex"
     space_xs:
-        value: "0.5rem"
-    space_xxs:
-        value: "0.25rem"
+        value: "0.5ex"
+
 global:
     type: number
     category: space

@@ -174,7 +174,7 @@ p[class^="rsg--para"] {
         -moz-osx-font-smoothing: auto;
         background: tint($docs-grey, 75%);
         color: shade($color-silver, 20%);
-        padding: $space-xx-small;
+        padding: $space-xs;
         border-radius: $radius-default;
         font-size: 87.5%;
     }
@@ -363,7 +363,7 @@ div[class^="rsg--sidebar"] {
 
             // Sidebar second level link
             a[class*="rsg--link"] {
-                padding: $space-xxs $space-l;
+                padding: $space-xs $space-l;
                 font-size: $size-s;
                 font-weight: $weight-normal;
                 border: 0; // remove active border
@@ -554,7 +554,7 @@ span[class^="rsg--type"] code[class^="rsg--code"],
 code.type {
     background: tint($docs-grey, 75%);
     color: shade($color-silver, 20%);
-    padding: $space-xx-small;
+    padding: $space-xs;
     border-radius: $radius-default;
 }
 

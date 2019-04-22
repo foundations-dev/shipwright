@@ -1,45 +1,54 @@
 /* VUE DESIGN SYSTEM SPACING HELPERS
 --------------------------------------------- */
 
-$spacing-ratio: 1.7;
+$squishing-ratio: 2;
+$stretching-ratio: 3/2; // = ex. padding: 12px 8px 12px 8px
 
 /*
   INSET-SPACE: For interface containers.
-  INSET-SQUISH-SPACE: For buttons, form elements, cells.
+  INSET-SQUISH-SPACE: For buttons, table cells.
   STACK-SPACE: For vertically stacked content.
   INLINE-SPACE: For things displayed inline.
+  INSET-STRETCH-SPACE: For forms, textboxes.
 */
 
 // Create inset-space
 //
 // @param  {Number} inset-space to set
 @mixin inset-space($value) {
-  padding: $value;
+    padding: $value;
 }
 
 // Create inset-squish-space
 //
 // @param  {Number} inset-squish-space to set
 @mixin inset-squish-space($value) {
-  padding: round($value / $spacing-ratio) $value round($value / $spacing-ratio);
+    padding: round($value / $squishing-ratio) $value round($value / $squishing-ratio);
+}
+
+// Create inset-stretch-space
+//
+// @param  {Number} inset-stretch-space to set
+@mixin inset-stretch-space($value) {
+    padding: $value round($value / $stretching-ratio) $value;
 }
 
 // Create stack-space
 //
 // @param  {Number} stack-space to set
 @mixin stack-space($value) {
-  margin-bottom: $value;
-  &:last-child {
-    margin-bottom: 0;
-  }
+    margin-bottom: $value;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 // Create inline-space
 //
 // @param  {Number} inline-space to set
 @mixin inline-space($value) {
-  margin-right: $value;
-  &:last-child {
-    margin-right: 0;
-  }
+    margin-right: $value;
+    &:last-child {
+        margin-right: 0;
+    }
 }

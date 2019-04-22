@@ -73,7 +73,7 @@ div[class^="rsg--wrapper"] > h1[class^="rsg--heading"]
     display: block;
     border: 0;
     line-height: $line-height-s;
-    padding: $space-xl $space-xl;
+    padding: $space-s $space-xl;
     width: calc(100% + #{$space-xl * 2});
     margin: $space-m -#{$space-xl} 0 -#{$space-xl};
     font-size: $size-xxxl;

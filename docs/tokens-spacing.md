@@ -1,20 +1,35 @@
+#### To Do
+
+-   [ ] Add explanation for spacing mixins
+    -   [ ] inset-space
+    -   [ ] inset-squish-space
+    -   [ ] stack-space
+    -   [ ] inline-space
+-   [ ] Write about ex
+
 #### Resources
 
 -   https://ether.thescenery.co/spacing/
 
 ---
 
-According to my research, designing a spacing system has the following requirements:
+This design system is built upon the following requirements:
 
 1. Each subsequent spacer size should be meaningfully different than the one preceding it.
 
 2. Spacing should be based on the type.
 
+---
+
+## System
+
 ```
 <spacing />
 ```
 
----
+There are 4 mixins included
+
+## Philosophy
 
 I've spent at least 20 hours researching type and spacing and I've found that the most developed ideas on the topic are encompassed in [this](https://ether.thescenery.co/spacing/) design system by [The Scenery](https://thescenery.co/). The most detailed explanation can be found in this [blog post](https://medium.com/@ethersystem/generating-design-system-spacing-aa69714160bc) they wrote.
 

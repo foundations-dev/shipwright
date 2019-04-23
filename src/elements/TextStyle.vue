@@ -1,5 +1,5 @@
 <template>
-  <component :is="type" :class="['text-style', variation]"> <slot /> </component>
+    <component :is="type" :class="['text-style', variation]"> <slot /> </component>
 </template>
 
 <script>
@@ -9,33 +9,33 @@
  * styles only for aesthetic effect.
  */
 export default {
-  name: "TextStyle",
-  status: "ready",
-  release: "1.0.0",
-  props: {
-    /**
-     * The html element used for the text style.
-     * `span, em, i, strong`
-     */
-    type: {
-      type: String,
-      default: "span",
-      validator: value => {
-        return value.match(/(span|em|i|strong)/)
-      },
+    name: "TextStyle",
+    status: "ready",
+    release: "1.0.0",
+    props: {
+        /**
+         * The html element used for the text style.
+         * `span, em, i, strong`
+         */
+        type: {
+            type: String,
+            default: "span",
+            validator: value => {
+                return value.match(/(span|em|i|strong)/)
+            },
+        },
+        /**
+         * Style variation to give additional meaning.
+         * `default, disabled, strong, positive, negative`
+         */
+        variation: {
+            type: String,
+            default: "default",
+            validator: value => {
+                return value.match(/(default|disabled|strong|positive|negative)/)
+            },
+        },
     },
-    /**
-     * Style variation to give additional meaning.
-     * `default, disabled, strong, positive, negative`
-     */
-    variation: {
-      type: String,
-      default: "default",
-      validator: value => {
-        return value.match(/(default|disabled|strong|positive|negative)/)
-      },
-    },
-  },
 }
 </script>
 
@@ -44,29 +44,29 @@ export default {
 $positive-text: #7cb518;
 
 .text-style {
-  @include reset;
-  @include stack-space($space-s);
-  color: $color-n900;
-  font-family: $font-text;
-  font-weight: $weight-normal;
-  font-size: $size-m;
-  line-height: $line-height-m;
-  @media #{$media-query-l} {
-    // This is how you’d use design tokens with media queries
-  }
-  &.disabled {
-    color: tint($color-n900, 50%);
-    text-decoration: line-through;
-  }
-  &.strong {
-    font-weight: $weight-semi-bold;
-  }
-  &.positive {
-    color: shade($positive-text, 20%);
-  }
-  &.negative {
-    color: $color-r500;
-  }
+    @include reset;
+    @include space-stack($space-s);
+    color: $color-n900;
+    font-family: $font-text;
+    font-weight: $weight-normal;
+    font-size: $size-m;
+    line-height: $line-height-m;
+    @media #{$media-query-l} {
+        // This is how you’d use design tokens with media queries
+    }
+    &.disabled {
+        color: tint($color-n900, 50%);
+        text-decoration: line-through;
+    }
+    &.strong {
+        font-weight: $weight-semi-bold;
+    }
+    &.positive {
+        color: shade($positive-text, 20%);
+    }
+    &.negative {
+        color: $color-r500;
+    }
 }
 </style>
 

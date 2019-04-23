@@ -1,13 +1,13 @@
 <template>
-  <component :is="type" class="nav">
-    <a
-      v-for="(item, index) in navItems"
-      :key="index"
-      :href="item.href"
-      :class="{ active: localActive === item.component }"
-      v-html="item.name"
-    />
-  </component>
+    <component :is="type" class="nav">
+        <a
+            v-for="(item, index) in navItems"
+            :key="index"
+            :href="item.href"
+            :class="{ active: localActive === item.component }"
+            v-html="item.name"
+        />
+    </component>
 </template>
 
 <script>
@@ -15,45 +15,45 @@
  * Used as main page navigation in templates.
  */
 export default {
-  name: "NavBar",
-  status: "ready",
-  release: "1.0.0",
-  model: {
-    prop: "active",
-  },
-  props: {
-    /**
-     * The html element name used for the nav bar.
-     */
-    type: {
-      type: String,
-      default: "nav",
+    name: "NavBar",
+    status: "ready",
+    release: "1.0.0",
+    model: {
+        prop: "active",
     },
-    /**
-     * State which tab is active when initiated (using name of the component).
-     */
-    active: {
-      required: true,
-      type: String,
+    props: {
+        /**
+         * The html element name used for the nav bar.
+         */
+        type: {
+            type: String,
+            default: "nav",
+        },
+        /**
+         * State which tab is active when initiated (using name of the component).
+         */
+        active: {
+            required: true,
+            type: String,
+        },
+        /**
+         * Menu items to be displayed on the nav bar.
+         */
+        navItems: {
+            required: true,
+            type: Array,
+        },
     },
-    /**
-     * Menu items to be displayed on the nav bar.
-     */
-    navItems: {
-      required: true,
-      type: Array,
+    computed: {
+        localActive: {
+            get() {
+                return this.active
+            },
+            set(val) {
+                this.$emit("input", val)
+            },
+        },
     },
-  },
-  computed: {
-    localActive: {
-      get() {
-        return this.active
-      },
-      set(val) {
-        this.$emit("input", val)
-      },
-    },
-  },
 }
 </script>
 
@@ -63,31 +63,31 @@ $color-nav-link: $color-b300;
 $color-nav-link-active: $color-b300;
 
 .nav {
-  @include stack-space($space-m);
-  font-family: $font-text;
-  font-size: $size-s;
-  line-height: $line-height-m;
-  color: $color-n000;
-  text-align: center;
-  width: 100%;
-  @media #{$media-query-l} {
-    // This is how you’d use design tokens with media queries
-  }
-  a {
-    color: $color-nav-link;
-    padding: $space-xs 0;
-    margin: 0 $space-xs;
-    text-decoration: none;
-    display: inline-block;
-    &:hover {
-      color: $color-nav-link-active;
+    @include space-stack($space-m);
+    font-family: $font-text;
+    font-size: $size-s;
+    line-height: $line-height-m;
+    color: $color-n000;
+    text-align: center;
+    width: 100%;
+    @media #{$media-query-l} {
+        // This is how you’d use design tokens with media queries
     }
-    &.active {
-      border-bottom: 2px solid $color-nav-link;
-      font-weight: $weight-bold;
-      color: $color-nav-link;
+    a {
+        color: $color-nav-link;
+        padding: $space-xs 0;
+        margin: 0 $space-xs;
+        text-decoration: none;
+        display: inline-block;
+        &:hover {
+            color: $color-nav-link-active;
+        }
+        &.active {
+            border-bottom: 2px solid $color-nav-link;
+            font-weight: $weight-bold;
+            color: $color-nav-link;
+        }
     }
-  }
 }
 </style>
 

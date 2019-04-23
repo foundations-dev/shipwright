@@ -129,7 +129,7 @@ export default {
 }
 h3 {
     @include reset;
-    @include stack-space($space-xs);
+    @include space-stack($space-xs);
     text-transform: capitalize;
     line-height: 1.2;
     width: 100%;

@@ -1,69 +1,69 @@
 <template>
-  <component :is="type" :class="['paragraph', variation]"> <slot /> </component>
+    <component :is="type" :class="['paragraph', variation]"> <slot /> </component>
 </template>
 
 <script>
 export default {
-  name: "Paragraph",
-  status: "prototype",
-  release: "3.5.0",
-  props: {
-    /**
-     * The html element used for the text.
-     * `p, span`
-     */
-    type: {
-      type: String,
-      default: "p",
-      validator: value => {
-        return value.match(/(p|span)/)
-      },
+    name: "Paragraph",
+    status: "prototype",
+    release: "3.5.0",
+    props: {
+        /**
+         * The html element used for the text.
+         * `p, span`
+         */
+        type: {
+            type: String,
+            default: "p",
+            validator: value => {
+                return value.match(/(p|span)/)
+            },
+        },
+        /**
+         * Style variation to give additional meaning.
+         * `intro, small, medium, large`
+         */
+        variation: {
+            type: String,
+            default: "medium",
+            validator: value => {
+                return value.match(/(medium|intro|large|small)/)
+            },
+        },
     },
-    /**
-     * Style variation to give additional meaning.
-     * `intro, small, medium, large`
-     */
-    variation: {
-      type: String,
-      default: "medium",
-      validator: value => {
-        return value.match(/(medium|intro|large|small)/)
-      },
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
 .paragraph {
-  @include reset;
-  @include stack-space($space-m);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: color 0.3s ease;
-  font-family: $font-text;
-  font-weight: $weight-normal;
-  line-height: $line-height-m;
-  color: shade($color-n100, 70%);
-  a {
-    color: $color-b300;
-    text-decoration: none;
-    &:hover {
-      color: darken($color-b300, 20%);
+    @include reset;
+    @include space-stack($space-m);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.3s ease;
+    font-family: $font-text;
+    font-weight: $weight-normal;
+    line-height: $line-height-m;
+    color: shade($color-n100, 70%);
+    a {
+        color: $color-b300;
+        text-decoration: none;
+        &:hover {
+            color: darken($color-b300, 20%);
+        }
     }
-  }
-  &.intro {
-    @include stack-space($space-m);
-    font-family: $font-heading;
-    font-weight: $weight-light;
-    font-size: $size-l;
-  }
-  &.large {
-    font-size: $size-l;
-  }
-  &.small {
-    font-size: $size-s;
-  }
+    &.intro {
+        @include space-stack($space-m);
+        font-family: $font-heading;
+        font-weight: $weight-light;
+        font-size: $size-l;
+    }
+    &.large {
+        font-size: $size-l;
+    }
+    &.small {
+        font-size: $size-s;
+    }
 }
 </style>
 

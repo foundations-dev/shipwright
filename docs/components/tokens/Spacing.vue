@@ -1,16 +1,15 @@
 <template>
-  <div class="spacing">
-    <div
-      v-for="(prop, index) in tokens"
-      :key="index"
-      class="space"
-      v-if="prop.category === 'space'"
-      :style="{ lineHeight: prop.value, height: prop.value }"
-    >
-      ${{prop.name.replace(/_/g, "-")}}
-      <span>({{prop.value}})</span>
+    <div class="spacing">
+        <div
+            v-for="(prop, index) in tokens"
+            :key="index"
+            class="space"
+            v-if="prop.category === 'space'"
+            :style="{ lineHeight: prop.value, height: prop.value }"
+        >
+            ${{ prop.name.replace(/_/g, "-") }} <span>({{ prop.value }})</span>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -25,18 +24,18 @@ import orderBy from "lodash/orderBy"
  * [/src/tokens/spacing.yml](https://github.com/viljamis/vue-design-system/blob/master/src/tokens/spacing.yml).
  */
 export default {
-  name: "Spacing",
-  methods: {
-    orderData: function(data) {
-      let order = orderBy(data, "category", "asc")
-      return order
+    name: "Spacing",
+    methods: {
+        orderData: function(data) {
+            let order = orderBy(data, "category", "asc")
+            return order
+        },
     },
-  },
-  data() {
-    return {
-      tokens: this.orderData(designTokens.props),
-    }
-  },
+    data() {
+        return {
+            tokens: this.orderData(designTokens.props),
+        }
+    },
 }
 </script>
 
@@ -47,31 +46,32 @@ export default {
 --------------------------------------------- */
 
 .spacing {
-  margin-top: $space-l;
-  overflow: hidden;
-  max-width: 1176px;
-  width: 100%;
+    margin-top: $space-l;
+    overflow: hidden;
+    max-width: 1176px;
+    width: 100%;
 }
 .space {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border-radius: $radius-default;
-  box-shadow: $shadow-s-inset;
-  margin-bottom: $space-xs;
-  font-size: $size-s;
-  font-family: $font-text;
-  color: $color-rich-black;
-  background: tint(#c4cdd5, 85%);
-  text-align: center;
-  position: relative;
-  float: left;
-  width: 100%;
-  span {
-    margin-left: 5px;
-    color: $color-silver;
-    user-select: none;
-    font-style: normal;
-  }
+    @include space-squish($space-m);
+    @include space-stack($space-m);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: $radius-default;
+    box-shadow: $shadow-s-inset;
+    font-size: $size-s;
+    font-family: $font-text;
+    color: $color-rich-black;
+    background: tint(#c4cdd5, 85%);
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 100%;
+    span {
+        margin-left: 5px;
+        color: $color-silver;
+        user-select: none;
+        font-style: normal;
+    }
 }
 </style>
 

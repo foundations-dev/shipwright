@@ -222,7 +222,7 @@ td[class^="rsg--cell"] p {
 
 // Sidebar logo
 div[class^="rsg--logo"] {
-    @include inset-space($space-m);
+    @include space-inset($space-m);
     border-bottom: 1px solid $color-n030;
     h1 {
         color: $docs-color-heading;
@@ -232,7 +232,7 @@ div[class^="rsg--logo"] {
 
 // Sidebar version
 p[class^="rsg--version"] {
-    @include inset-squish-space($space-xs);
+    @include space-squish($space-xs);
     margin: $space-xs 0 0;
     color: $color-n900;
     font-family: "IBM Plex Mono", Helvetica, Arial, sans-serif;
@@ -483,7 +483,7 @@ div[class^="rsg--tab"] {
             font-weight: $weight-normal;
             font-family: $font-text;
             line-height: $line-height-s;
-            @include inset-squish-space($space-s);
+            @include space-squish($space-s);
             cursor: pointer;
             background: mix($color-b400, $color-rich-black, 50%);
             color: $color-white;

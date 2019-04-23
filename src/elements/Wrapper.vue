@@ -1,7 +1,5 @@
 <template>
-  <component :is="type" class="wrapper">
-    <slot/>
-  </component>
+    <component :is="type" class="wrapper"> <slot /> </component>
 </template>
 
 <script>
@@ -10,36 +8,35 @@
  * associated actions. Wrapper doesn’t provide customizable options.
  */
 export default {
-  name: "Wrapper",
-  status: "review",
-  release: "1.0.0",
-  props: {
-    /**
-     * The html element name used for the wrapper.
-     */
-    type: {
-      type: String,
-      default: "div",
+    name: "Wrapper",
+    status: "review",
+    release: "1.0.0",
+    props: {
+        /**
+         * The html element name used for the wrapper.
+         */
+        type: {
+            type: String,
+            default: "div",
+        },
     },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
 .wrapper {
-  @include reset;
-  @include inset-space($space-l);
-  font-family: $font-text;
-  font-weight: $weight-normal;
-  font-size: $size-m;
-  line-height: $line-height-m;
-  width: 100%;
-  @media #{$media-query-l} {
-    @include inset-space($space-xl);
-  }
+    @include reset;
+    @include space-inset($space-l);
+    font-family: $font-text;
+    font-weight: $weight-normal;
+    font-size: $size-m;
+    line-height: $line-height-m;
+    width: 100%;
+    @media #{$media-query-l} {
+        @include space-inset($space-xl);
+    }
 }
 </style>
-
 
 <docs>
   ```jsx

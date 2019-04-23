@@ -2,24 +2,9 @@
     <div>
         <div class="color-grid">
             <div class="grid-container">
-                <div class="container_val">
-                    <p>val / cat</p>
-                    <p class="val">050</p>
-                    <p class="val">075</p>
-                    <p class="val">100</p>
-                    <p class="val">200</p>
-                    <p class="val">300</p>
-                    <p class="val">400</p>
-                    <p class="val">500</p>
-                </div>
-                <div v-for="cat in categories" :key="cat" class="container_cat">
-                    {{ cat }}
-                    <div
-                        v-for="(prop, index) in getCategory(cat)"
-                        :key="index"
-                        class="block"
-                        :style="{ backgroundColor: prop.value }"
-                    ></div>
+                <div v-for="color in neutralColors">
+                    <p>{{ getColorCode(color) }}</p>
+                    <div class="block" :style="{ backgroundColor: color.value }"></div>
                 </div>
             </div>
         </div>
@@ -44,6 +29,10 @@ export default {
                 prop => prop.category == `color_group_${category}`
             )
             return filteredcolors
+        },
+        getColorCode: function(token) {
+            let colorcode = token.name.replace("color_", "")
+            return colorcode
         },
     },
     data() {
@@ -85,7 +74,9 @@ export default {
 
 .color-grid {
     margin-top: $space-xl;
-    margin-bottom: $space-xl;
+    margin-bottom: $space-m;
+    color: $color-n100;
+    font-size: $size-s;
 
     .cats {
         display: grid;
@@ -112,7 +103,6 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            color: $color-n100;
         }
 
         .container_cat,
@@ -125,7 +115,8 @@ export default {
         width: 100px;
         height: 50px;
         border-radius: 5px;
-        margin: 20px 0;
+        border: 1px $color-n050 solid;
+        margin: $space-s 0;
     }
 }
 

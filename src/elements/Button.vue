@@ -84,7 +84,7 @@ export default {
 .button {
     @include reset;
     @include space-stack($space-m);
-    @include inline-space($space-xs);
+    @include space-inline($space-xs);
     will-change: transform;
     transition: all 0.2s ease;
     -webkit-font-smoothing: antialiased;

@@ -5,11 +5,11 @@ $squishing-ratio: 2;
 $stretching-ratio: 3/2; // = ex. padding: 12px 8px 12px 8px
 
 /*
-  INSET-SPACE: For interface containers.
-  INSET-SQUISH-SPACE: For buttons, table cells.
+  SPACE-INSET: For interface containers.
+  SPACE-SQUISH: For buttons, table cells.
   STACK-SPACE: For vertically stacked content.
-  INLINE-SPACE: For things displayed inline.
-  INSET-STRETCH-SPACE: For forms, textboxes.
+  SPACE-INLINE For things displayed inline.
+  SPACE-STRETCH: For forms, textboxes.
 */
 
 // Create inset-space
@@ -43,10 +43,10 @@ $stretching-ratio: 3/2; // = ex. padding: 12px 8px 12px 8px
     }
 }
 
-// Create inline-space
+// Create space-inline
 //
-// @param  {Number} inline-space to set
-@mixin inline-space($value) {
+// @param  {Number} space-inline to set
+@mixin space-inline($value) {
     margin-right: $value;
     &:last-child {
         margin-right: 0;

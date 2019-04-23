@@ -1,13 +1,17 @@
-### Neutral Colors
+These colors are adapted from [Atlassian's Design System](https://atlassian.design/guidelines/brand/color).
 
-This is a paragraph about the color grid and it has to be long enough to go to another line so that i can make sure paragraphs are working properly
+An example syntax for each color token is `$color-Y100`. The code values (`Y100` in the example) can be found in the tables below.
 
-```
-<neutral-colors />
-```
+Clicking a color will copy the hex code.
 
-### Feature Colors
+#### Neutral Colors
 
 ```
 <feature-colors />
+```
+
+#### Feature Colors
+
+```
+<neutral-colors />
 ```

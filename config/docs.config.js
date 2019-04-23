@@ -88,6 +88,7 @@ module.exports = {
         // },
         {
             name: "Design Tokens",
+            content: "../docs/tokens.md",
             //pagePerSection: false,
             sectionDepth: 0, //this is what's buggy, its causing empty component titles to appear
             exampleMode: "hide",

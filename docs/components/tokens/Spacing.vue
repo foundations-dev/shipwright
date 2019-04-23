@@ -1,13 +1,13 @@
 <template>
     <div class="spacing">
         <div
+            class="space-container"
             v-for="(prop, index) in tokens"
             :key="index"
-            class="space"
             v-if="prop.category === 'space'"
-            :style="{ lineHeight: prop.value, height: prop.value }"
         >
-            ${{ prop.name.replace(/_/g, "-") }} <span>({{ prop.value }})</span>
+            <p>${{ prop.name.replace(/_/g, "-") }} ({{ prop.value }})</p>
+            <div class="space" :style="{ lineHeight: prop.value, height: prop.value }"></div>
         </div>
     </div>
 </template>
@@ -51,9 +51,13 @@ export default {
     max-width: 1176px;
     width: 100%;
 }
+
+.space-container {
+    @include space-stack($space-m);
+}
+
 .space {
     @include space-squish($space-m);
-    @include space-stack($space-m);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     border-radius: $radius-default;

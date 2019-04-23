@@ -4,6 +4,14 @@ The [Principles of Inclusive Web Design](https://www.designprinciplesftw.com/col
 
 ---
 
+These are the 'prototype' principles.
+
+#### Context comes first
+
+#### DOCS: Text is in plain english
+
+---
+
 ### 1. Equitable
 
 Be welcoming, don't discriminate and engage with people. Create different user experiences and make certain they have equally valuable outcomes.

@@ -13,21 +13,50 @@
 
 ---
 
-This design system is built upon the following requirements:
+## System
+
+### Requirements
 
 1. Each subsequent spacer size should be meaningfully different than the one preceding it.
 
 2. Spacing should be based on the type.
 
----
+### Size
 
-## System
+The unit of size is based on the ex unit, which is _the height of the lower-case x in your font_.
+
+[![ex-unit](\img\ex-unit.png)](https://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html)
+_Source: [webdesign.tutsplus.com](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573)_
+
+These are the sizes, chosen by the Fibonacci sequence. (You can read more in the "Philosophy" section):
 
 ```
 <spacing />
 ```
 
-There are 4 mixins included
+### Mixins
+
+The following mixins are available. They are based on the ideas [here](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62).
+
+**`inset-space($space-m)`**
+
+Uses the `$space-m` size to create inner padding.
+
+**`inset-squish-space($space-m)`**
+
+Creates inner padding of `$space-m` on the sides and one-half of `$space-m` on the top and bottom. Useful for buttons and data table cells
+
+**`inline-stretch-space($space-m)`**
+
+Creates inner padding of `$space-m` on the top and bottom and 2/3 of `$space-m` on the sides. Useful for forms and text containers.
+
+**`stack-space($space-m)`**
+
+Adds space on the bottom. Useful for stacked items.
+
+**`inline-space($space-m)`**
+
+Adds space in between. Useful for pills, tags, breadcrumbs, side-by-side forms, etc.
 
 ## Philosophy
 

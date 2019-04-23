@@ -32,33 +32,25 @@ These are the sizes, chosen by the Fibonacci sequence. (You can read more in the
 
 The following mixins are available. They are based on the ideas [here](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62).
 
-**`inset-space($space-m)`**
+**`space-inset($space-m)`**
 
 Uses the `$space-m` size to create inner padding.
 
-**`inset-squish-space($space-m)`**
+**`space-squish($space-m)`**
 
 Creates inner padding of `$space-m` on the sides and one-half of `$space-m` on the top and bottom. Useful for buttons and data table cells
 
-**`inline-stretch-space($space-m)`**
+**`space-stretch($space-m)`**
 
 Creates inner padding of `$space-m` on the top and bottom and 2/3 of `$space-m` on the sides. Useful for forms and text containers.
 
-**`stack-space($space-m)`**
+**`space-stack($space-m)`**
 
 Adds space on the bottom. Useful for stacked items.
 
-**`inline-space($space-m)`**
+**`space-inline($space-m)`**
 
 Adds space in between. Useful for pills, tags, breadcrumbs, side-by-side forms, etc.
-
-```
-<spacing-mixins />
-```
-
-```
-<SpacingMixins />
-```
 
 ## Philosophy
 

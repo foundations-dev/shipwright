@@ -1,12 +1,5 @@
 #### To Do
 
--   [ ] Add explanation for spacing mixins
-    -   [ ] inset-space
-    -   [ ] inset-squish-space
-    -   [ ] stack-space
-    -   [ ] inline-space
--   [ ] Write about ex
-
 #### Resources
 
 -   https://ether.thescenery.co/spacing/
@@ -25,7 +18,8 @@
 
 The unit of size is based on the ex unit, which is _the height of the lower-case x in your font_.
 
-[![ex-unit](\img\ex-unit.png)](https://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html)
+[![ex-unit](/img/ex-unit.png)](https://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html)
+
 _Source: [webdesign.tutsplus.com](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573)_
 
 These are the sizes, chosen by the Fibonacci sequence. (You can read more in the "Philosophy" section):
@@ -57,6 +51,14 @@ Adds space on the bottom. Useful for stacked items.
 **`inline-space($space-m)`**
 
 Adds space in between. Useful for pills, tags, breadcrumbs, side-by-side forms, etc.
+
+```
+<spacing-mixins />
+```
+
+```
+<SpacingMixins />
+```
 
 ## Philosophy
 

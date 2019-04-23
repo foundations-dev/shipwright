@@ -222,11 +222,14 @@ td[class^="rsg--cell"] p {
 
 // Sidebar logo
 div[class^="rsg--logo"] {
-    @include space-inset($space-m);
+    padding: $space-l $space-xl;
     border-bottom: 1px solid $color-n030;
     h1 {
-        color: $docs-color-heading;
-        font-weight: $weight-semi-bold;
+        font-family: "IBM Plex Sans";
+        // font-style: italic;
+        // color: $docs-color-text;
+        font-weight: $weight-normal;
+        margin-bottom: $space-xs;
     }
 }
 
@@ -249,6 +252,7 @@ p[class^="rsg--version"] {
 // Sidebar search
 div[class^="rsg--search"] {
     border-bottom: 1px solid $color-n030;
+    @include space-squish($space-l);
 }
 
 div[class^="rsg--search"] input {

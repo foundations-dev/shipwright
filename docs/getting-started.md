@@ -20,7 +20,7 @@ Now, since Vue Design System was built to handle much more extensive systems, th
 https://github.com/viljamis/vue-design-system/wiki/getting-started
 This is the most important resource for getting started. I don't feel great about copy and pasting the docs, but I don't feel like writing out another version either, so this will have to do for now.
 
-## V1.0.0 Release
+## V0.1.0 Release
 
 Version 1 includes the basic building blocks of any website, as well as the _Design Principles_ that will guide this endeavor.
 

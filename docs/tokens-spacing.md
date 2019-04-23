@@ -1,20 +1,18 @@
-#### To Do
-
 #### Resources
 
 -   https://ether.thescenery.co/spacing/
 
 ---
 
-## System
+### System
 
-### Requirements
+#### Principles
 
 1. Each subsequent spacer size should be meaningfully different than the one preceding it.
 
 2. Spacing should be based on the type.
 
-### Size
+#### Size
 
 The unit of size is based on the ex unit, which is _the height of the lower-case x in your font_.
 
@@ -28,7 +26,7 @@ These are the sizes, chosen by the Fibonacci sequence. (You can read more in the
 <spacing />
 ```
 
-### Mixins
+#### Mixins
 
 The following mixins are available. They are based on the ideas [here](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62).
 
@@ -52,16 +50,16 @@ Adds space on the bottom. Useful for stacked items.
 
 Adds space in between. Useful for pills, tags, breadcrumbs, side-by-side forms, etc.
 
-## Philosophy
+### Philosophy
 
 I've spent at least 20 hours researching type and spacing and I've found that the most developed ideas on the topic are encompassed in [this](https://ether.thescenery.co/spacing/) design system by [The Scenery](https://thescenery.co/). The most detailed explanation can be found in this [blog post](https://medium.com/@ethersystem/generating-design-system-spacing-aa69714160bc) they wrote.
 
-### NOT Random
+#### NOT Random
 
 -   limit options
 -   pick a base
 
-### Ensuring Meaningful Differences
+#### Ensuring Meaningful Differences
 
 Countering the "randomness" of spacing in webdesign seems like a common goal amongst web-designers. (It's mentioned [here](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62) in an article that you should probably read if you haven't yet). _We need to limit our choices of spacing._
 
@@ -73,7 +71,7 @@ Math might be scary some times but, this isn't one of them. Making a Fibonacci S
 
 What does this have to do with our spacing system? Well this sequence provides _exactly_ what we are trying to accomplish. The difference between any two numbers is the size of the previous number. Any two sizes will be _obviously_ different, because the difference is as big as the preceding unit.
 
-### Why not a geometric progression?
+#### Why not a geometric progression?
 
 Well, there's no solid answer here besides the fact that after some experimentation, it doesn't fit properly
 

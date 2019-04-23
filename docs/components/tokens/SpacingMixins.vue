@@ -14,7 +14,7 @@ import orderBy from "lodash/orderBy"
  * [/src/tokens/spacing.yml](https://github.com/viljamis/vue-design-system/blob/master/src/tokens/spacing.yml).
  */
 export default {
-    name: "Spacing",
+    name: "SpacingMixins",
     methods: {
         orderData: function(data) {
             let order = orderBy(data, "category", "asc")

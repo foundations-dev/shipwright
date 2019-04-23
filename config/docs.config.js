@@ -97,6 +97,7 @@ module.exports = {
                 "../docs/components/tokens/NeutralColors.vue",
                 "../docs/components/tokens/FontSize.vue",
                 "../docs/components/tokens/Spacing.vue",
+                "../docs/components/tokens/SpacingMixins.vue",
                 "../docs/components/tokens/All.vue",
             ],
             sections: [

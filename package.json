@@ -1,6 +1,6 @@
 {
     "name": "np-design-system",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "NP Design System hosts the styles of New Perspectives. It is built with Vue Design System.",
     "author": "Earl Man",
     "main": "dist/system/system.js",

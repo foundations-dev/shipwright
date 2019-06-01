@@ -9,17 +9,13 @@
     ],
     "private": false,
     "license": "MIT",
-    "scripts": {
-
-    },
-
+    "scripts": {},
     "repository": {
         "type": "git",
         "url": "git"
     },
     "keywords": [
         "design system",
-
         "design",
         "system"
     ],
@@ -84,11 +80,9 @@
             }
         }
     },
-    "dependencies": {
-
-    },
+    "dependencies": {},
     "devDependencies": {
-
+        "vuepress": "^0.14.11"
     },
     "engines": {
         "node": ">= 8.6.0",
@@ -104,9 +98,6 @@
         "not OperaMini all",
         "not OperaMobile > 0"
     ],
-    "bugs": {
-    },
-    "directories": {
-
-    }
+    "bugs": {},
+    "directories": {}
 }

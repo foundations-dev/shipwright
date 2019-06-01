@@ -9,7 +9,11 @@
     ],
     "private": false,
     "license": "MIT",
-    "scripts": {},
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+
+    },
     "repository": {
         "type": "git",
         "url": "git"

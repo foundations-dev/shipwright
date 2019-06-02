@@ -86,7 +86,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "vuepress": "^0.14.11"
+        "vuepress": "^1.0.0-alpha.48"
     },
     "engines": {
         "node": ">= 8.6.0",

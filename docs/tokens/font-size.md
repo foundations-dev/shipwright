@@ -1,3 +1,5 @@
+# Font Size
+
 Font sizes are based on **rems**. This means that the base size can be changed by adding a `font-size` attribute to the `<html>` tag.
 
 I've set the default to 18 px, because my eyes suck but also I like the sizes that it generates when using a type scale.

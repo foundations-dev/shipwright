@@ -1,3 +1,5 @@
+# Principles
+
 Principles are the foundation of the system. They form the basis of a good product and help the team with decision making. They are here to guide you and your team when working with the myriad parts of the system and help you do better and more informed decisions.
 
 The [Principles of Inclusive Web Design](https://www.designprinciplesftw.com/collections/the-ten-principles-of-inclusive-web-design) by Sandi Wassmer was adopted as a first iteration of Principles for the NP Design System. We find that this system reflects New Perspectives' desire to create a more sympathetic world.

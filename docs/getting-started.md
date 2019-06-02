@@ -1,3 +1,5 @@
+# Getting Started
+
 #### Resources
 
 -   [Vue Design System's Getting Started Guide](https://github.com/viljamis/vue-design-system/wiki)

@@ -43,3 +43,44 @@ props:
 global:
     type: number
     category: font-size
+
+
+:root {
+    // Base Font Sizes (Typography is a separate section)
+    --base-font-size: 16px;
+
+    --font-primary: "Lato", sans-serif;
+    //--font-secondary: serif;
+
+    /* set base values */
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.333;
+
+    /* type scale */
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(
+        1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)
+    );
+    --text-xxl: calc(
+        1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+            var(--text-scale-ratio)
+    );
+    --text-xxxl: calc(
+        1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+            var(--text-scale-ratio) * var(--text-scale-ratio)
+    );
+
+
+}
+
+:root 
+    --base-font-size: 16px;
+    
+    --desk-ms: 1.333 //Desktop Multiplier Scale (Perfect Fourth)
+    --mob-ms: 1.250 //Mobile Multiplier Scale (Major Third)
+    
+    
+

@@ -1,0 +1,121 @@
+#
+# FONT-SIZE TOKENS
+# Use these tokens to set a font-size.
+#
+# Using a perfect-fourth type scale with a 1rrem base
+# Alternate minor-third version available
+
+props:
+    size_base:
+        value: "18px"
+
+    size_xxxxl:
+        value: "4.209rrem"
+    size_xxxl:
+        value: "3.157rrem"
+    size_xxl:
+        value: "2.369rrem"
+    size_xl:
+        value: "1.777rrem"
+    size_l:
+        value: "1.333rrem"
+    size_m:
+        value: "1.000rrem"
+    size_s:
+        value: "0.750rrem"
+    size_xs:
+        value: "0.563rrem"
+
+    # size_m3xxxl:
+    #   value: "2.074rrem"
+    # size_m3xxl:
+    #   value: "1.728rrem"
+    # size_m3xl:
+    #   value: "1.440rrem"
+    # size_m3l:
+    #   value: "1.200rrem"
+    # size_m3m:
+    #   value: "1.000rrem"
+    # size_m3s:
+    #   value: "0.833rrem"
+    # size_m3xs:
+    #   value: "0.694rrem"
+global:
+    type: number
+    category: font-size
+
+
+:root {
+    // Base Font Sizes (Typography is a separate section)
+    --base-font-size: 16px;
+
+    --font-primary: "Lato", sans-serif;
+    //--font-secondary: serif;
+
+
+
+
+}
+
+:root 
+
+    /*=============================================
+    =            Set Type Scale Variables         =
+    =============================================*/    
+    
+    /*----------  Set Base Font Sizes  ----------*/
+
+    --d-base-font-size: 16px; 
+    --m-base-font-size: 14px;
+    
+    /*----------  Set Type Scale Multipliers  ----------*/
+
+    --d-multiplier: 1.333 // Perfect Fourth
+    --m-multiplier: 1.250 // Major Third
+    
+
+
+    /*=============================================
+    /*               Type Scale                   =
+    /*============================================*/
+
+    /*----------  Desktop Scale  ----------*/
+
+    /* 0.563rem,  9.00px */ --d-xs: calc(1rem / (var(--d-multiplier) * var(--d-multiplier)));
+    /* 0.750rem, 12.00px */ --d-sm: calc(1rem / var(--d-multiplier));
+    /* 1.000rem, 16.00px */ --d-md: calc(1rem * var(--d-multiplier));
+    /* 1.333rem, 16.00px */ --d-lg: calc(1rem * var(--d-multiplier) * var(--d-multiplier));
+    /* 1.777rem, 28.43px */ --d-xl: calc(1rem * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+    /* 2.369rem, 37.90px */ --d-2xl: calc(1rem * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+    /* 3.157rem, 50.52px */ --d-3xl: calc(1rem * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+    /* 4.209rem, 67.34px */ --d-4xl: calc(1rem * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+    
+    /*----------  Mobile Scale  ----------*/
+
+    /* 0.640rem, 10.24px */ --m-xs: calc(1rem / (var(--m-multiplier) * var(--m-multiplier)));
+    /* 0.800rem, 12.80px */ --m-sm: calc(1rem / var(--m-multiplier));
+    /* 1.000rem, 16.00px */ --m-md: calc(1rem * var(--m-multiplier));
+    /* 1.250rem, 20.00px */ --m-lg: calc(1rem * var(--m-multiplier) * var(--m-multiplier));
+    /* 1.563rem, 25.00px */ --m-xl: calc(1rem * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+    /* 1.953rem, 31.25px */ --m-2xl: calc(1rem * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+    /* 2.441rem, 39.06px */ --m-3xl: calc(1rem * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+    /* 3.052rem, 48.83px */ --m-4xl: calc(1rem * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+
+
+
+/*----------  Import Media Queries to set Responsive Font Sizes  ----------*/
+@import "../_04 - Layout & Media Queries/_mediaqueries"
+
+
+/*----------  Set font-size on html (responsively)  ----------*/
+html
+    font-size: var(--d-base-font-size)
+    @include md
+        font-size: var(--m-base-font-size)
+
+
+/*==========================================================
+/*=       Create Mixins to include Responsive Sizes        =
+/*=========================================================*/
+
+@mixin 

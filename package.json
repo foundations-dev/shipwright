@@ -90,6 +90,11 @@
         "vue-server-renderer": "^2.6.10"
     },
     "devDependencies": {
+        "@babel/core": "^7.0.0-0",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "parcel-bundler": "^1.12.3",
+        "postcss-import": "^12.0.1",
         "postcss-url": "^8.0.0",
         "sass": "^1.21.0",
         "vuepress": "^0.14.11"

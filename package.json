@@ -86,7 +86,10 @@
         }
     },
     "dependencies": {
+        "@csstools/postcss-sass": "^4.0.0",
+        "autoprefixer": "^9.6.0",
         "postcss": "^7.0.17",
+        "postcss-modules": "^1.4.1",
         "vue": "^2.6.10",
         "vue-server-renderer": "^2.6.10"
     },

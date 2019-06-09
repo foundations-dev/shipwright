@@ -1,13 +1,8 @@
-/* GLOBAL: INCLUDES
- *
- * It is recommended to only include variables,
- * mixins, etc. in this file, to prevent duplicated
- * CSS in your final, compiled files.
- */
-
-@import "../styles/functions"
-@import "../styles/mixins"
-@import "../styles/spacing"
+@import "01 - Color"
+@import "02 - Typography"
 
 
-//TODO: layout and mediaqueries need to be imported first
+html
+    background-color: var(--color-bg-l) // Check default colors exists
+    // background-color: var(--color-N030) // Check colors file exist
+    // background-color: red // Check styles are connected

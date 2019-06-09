@@ -89,6 +89,7 @@
         "vue-server-renderer": "^2.6.10"
     },
     "devDependencies": {
+        "sass": "^1.21.0",
         "vuepress": "^0.14.11"
     },
     "engines": {

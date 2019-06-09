@@ -1,136 +1,199 @@
+/*=============================================
+=                    Setup                    =
+=============================================*/
 
-// these are all the text tags
-
-// TODO: line height
 :root {
-    // Base Font Sizes (Typography is a separate section)
-    --base-font-size: 16px;
-    --base-line-height: 1.4;
 
-    --font-primary: "Lato", sans-serif;
-    //--font-secondary: serif;
+    //todo: We don't need to import fonts here anymore
+    /*----------  1) Import fonts and set primary/secondary font  ----------*/
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500,600');
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600');
+    --font-primary: 'IBM Plex Serif', serif;
+    --font-secondary: 'IBM Plex Mono', monospace;
 
-    /* set base values */
-    --text-base-size: 1em;
-    --text-scale-ratio: 1.2;
+    /*----------  2) Choose base font size and line height  ----------*/
 
+    --base-size: 17px;
+    --line-height-heading: 1.6;
+    --line-height-body: 1.6;
 
+    /*----------  3) Define colors (NOTE: These should eventually be moved to "colors" file)  ----------*/
 
-    /* line-height */
-    --heading-line-height: 1.2;
-    --body-line-height: 1.4;
+    // --color-text-heading: #212822;
+    // --color-text-body: #0E110E;
+    // --color-text-caption: #0E110E;
+
 }
 
-@include breakpoint(md) {
-    :root {
-        --text-base-size: 1.25em;
-        --text-scale-ratio: 1.25;
-    }
-}
-
-// text formatting (including color defaults)
-body {
-    font-size: var(--text-base-size);
+// Apply base font sizes and fonts
+// Applies the base variables to the whole document
+// * You probably don't need to change this
+html, * {
+    font-size: var(--base-size);
     font-family: var(--font-primary);
-    color: var(--text-dark);
+    line-height: var(--line-height-body);
+    color: var(--color-text-body);
 }
 
-h1,
-h2,
-h3,
-h4,
-form legend {
+h1, h2, h3, h4, h5, h6, form legend {
+    line-height: var(--line-height-heading);
+    margin: 0 0 $space-s;
     color: var(--color-text-heading);
-    line-height: var(--heading-line-height);
-    margin: 0;
 }
+
+b, strong {
+    font-weight: bold;
+}
+
+/*=====          End of Setup          ======*/
+
+
+
+/*=============================================
+=           Website-Specific Styles           =
+=============================================*/
+
 
 h1 {
-    font-size: var(--text-xl);
-    text-transform: uppercase;
-    color: var(--primary);
-    font-weight: bold;
+    font-size: $size-xxxxl;
+    font-weight: 300;
 }
 
 h2 {
-    font-size: var(--text-lg);
-}
-
-h1:before,
-h2:before {
-    content: "\25a0   ";
-    margin-right: var(--space-xs);
-    margin-left: -1.45em;
+    font-size: $size-xxxl;
+    font-weight: 500;
 }
 
 h3 {
-    font-size: var(--text-md);
-    font-weight: 300;
-    font-style: italic;
+    font-size: $size-xxl;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 300;
+    font-size: $size-xl;
+    font-weight: 500;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    opacity: var(--link-o);
+h5 {
+    font-size: $size-l;
+    font-weight: 600;
+}
 
-    &:hover {
-        text-decoration: none;
-        opacity: 1;
-    }
+h6 {
+    font-size: $size-l;
+    font-weight: 600;
 }
 
 p {
-    line-height: var(--body-line-height);
+    font-size: $size-m;
+    font-weight: 500;
 }
 
-b,
-strong {
-    font-weight: bold;
+a {
+    font-size: $size-m;
+    text-decoration: none;
+    font-weight: 600;
 }
 
+@mixin text-button {
+    font-family: var(--font-secondary);
+    color: var(--color-text-heading);
+    font-weight: 500;
+    font-size: $size-m;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.text-button {
+    @include text-button;
+}
+
+@mixin text-caption {
+    font-family: var(--font-secondary);
+    color: var(--color-text-caption);
+    font-weight: 600;
+    font-size: $size-m;
+}
+
+.text-caption {
+    @include text-caption
+}
+
+/*=====  End of Website-Specific Styles ======*/
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/* text size classes */
+
+.text--xxxl {
+    font-size: var(--text-xxxl);
+}
+
+.text--xxl {
+    font-size: var(--text-xxl);
+    color: var(--text-primary);
+}
+
+.text--xl {
+    font-size: var(--text-xl);
+}
+
+.text--lg {
+    font-size: var(--text-lg);
+}
+
+.text--md {
+    font-size: var(--text-md);
+}
+
+.text--sm, small {
+    font-size: var(--text-sm);
+}
+
+.text--xs {
+    font-size: var(--text-xs);
+}
 
 
 // Add this to automate margins inside text containers
 // margins have been removed everywhere else
 @mixin text-container {
-    h2,
-    h3,
-    h4 {
+    h2, h3, h4 {
         margin-top: var(--space-sm);
     }
-
-    ul,
-    ol,
-    p {
+    
+    ul, ol, p {
         margin-bottom: var(--space-md);
     }
 
-    ul,
-    ol {
-        list-style-position: outside;
+    ul, ol {
+		list-style-position: outside;
         padding-left: 24px;
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+
+	ol {
+		list-style-type: decimal;
     }
 
-    ul {
-        list-style-type: disc;
+    ul li, ol li {
+        line-height: $body-line-height;
     }
-
-    ol {
-        list-style-type: decimal;
-    }
-
-    ul li,
-    ol li {
-        line-height: var(--body-line-height);
-    }
-
+    
     em {
         font-style: italic;
     }
@@ -147,3 +210,17 @@ strong {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

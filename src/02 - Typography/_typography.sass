@@ -1,0 +1,222 @@
+/*=============================================*/
+/*=                    Setup                  =*/
+/*=============================================*/
+/*----------  Import Mixins  ----------*/
+@import './_font-size'
+@import './_font'
+@import '../03 - Spacing/_spacing'
+
+
+:root 
+
+    //todo: We don't need to import fonts here anymore
+    /*----------  1) Import fonts and set primary/secondary font  ----------*/
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500,600')
+    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600')
+    --font-primary: 'IBM Plex Serif', serif
+    --font-secondary: 'IBM Plex Mono', monospace
+
+    /*----------  2) Choose base font size and line height  ----------*/
+
+    --base-size: 17px
+    --line-height-heading: 1.6
+    --line-height-body: 1.6
+
+    /*----------  3) Define colors (NOTE: These should eventually be moved to "colors" file)  ----------*/
+
+    // --color-text-heading: #212822
+    // --color-text-body: #0E110E
+    // --color-text-caption: #0E110E
+
+
+
+
+
+
+
+// Apply base font sizes and fonts
+// Applies the base variables to the whole document
+// * You probably don't need to change this
+html, * 
+    font-size: var(--base-size)
+    font-family: var(--font-primary)
+    line-height: var(--line-height-body)
+    color: var(--color-text-body)
+
+
+h1, h2, h3, h4, h5, h6, form legend 
+    line-height: var(--line-height-heading)
+    margin: 0 0 var(--space-sm)
+    color: var(--color-text-heading)
+
+
+b, strong 
+    font-weight: bold
+
+
+/*=====          End of Setup          ======*/
+
+
+
+/*=============================================*/
+/*=           Website-Specific Styles         =*/
+/*=============================================*/
+
+
+h1 
+    @include text(4xl)
+    font-weight: 300
+
+
+h2 
+    @include text(3xl)
+    font-weight: 500
+
+
+h3 
+    @include text(2xl)
+    font-weight: 600
+
+
+h4 
+    @include text(xl)
+    font-weight: 500
+
+
+h5 
+    @include text(lg)
+    font-weight: 600
+
+
+h6 
+    @include text(lg)
+    font-weight: 600
+
+
+p 
+    @include text(md)
+    font-weight: 500
+
+
+a 
+    @include text(md)
+    text-decoration: none
+    font-weight: 600
+
+
+@mixin text-button 
+    font-family: var(--font-secondary)
+    color: var(--color-text-heading)
+    font-weight: 500
+    @include text(md)
+    letter-spacing: 0.02em
+    text-transform: uppercase
+
+
+.text-button 
+    @include text-button
+
+
+@mixin text-caption 
+    font-family: var(--font-secondary)
+    color: var(--color-text-caption)
+    font-weight: 600
+    @include text(md)
+
+
+.text-caption 
+    @include text-caption
+
+
+/*=====  End of Website-Specific Styles ======*/
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+/* text size classes */
+
+.text--xxxl 
+    font-size: var(--text-xxxl)
+
+
+.text--xxl 
+    font-size: var(--text-xxl)
+    color: var(--text-primary)
+
+
+.text--xl 
+    font-size: var(--text-xl)
+
+
+.text--lg 
+    font-size: var(--text-lg)
+
+
+.text--md 
+    font-size: var(--text-md)
+
+
+.text--sm, small 
+    font-size: var(--text-sm)
+
+
+.text--xs 
+    font-size: var(--text-xs)
+
+
+
+// Add this to automate margins inside text containers
+// margins have been removed everywhere else
+// @mixin text-container 
+// 	h2, h3, h4 
+// 	margin-top: var(--space-sm)
+
+
+// 	ul, ol, p 
+// 	margin-bottom: var(--space-md)
+
+
+// 	ul, ol 
+// 	list-style-position: outside
+// 	padding-left: 24px
+
+
+// 	ul 
+// 	list-style-type: disc
+
+
+// 	ol 
+// 	list-style-type: decimal
+
+
+// 	ul li, ol li 
+// 	line-height: $body-line-height
+
+
+// 	em 
+// 	font-style: italic
+
+
+// 	u 
+// 	text-decoration: underline
+    
+
+
+/* utility classes */
+.truncate 
+    // truncate text if it exceeds parent
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+

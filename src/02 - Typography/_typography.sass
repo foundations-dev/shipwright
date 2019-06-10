@@ -13,20 +13,12 @@
 
     /* Note: fonts must be imported in _font */
     --font-primary: 'IBM Plex Sans', sans
-    //--font-secondary: 'IBM Plex Mono', monospace
+    //--font-secondary: 'IBM Plex Serif', serif
 
-    /* ---------  Vertical Rhythm Grid ----------*/    
-    body
-        background-image: linear-gradient(#999 1px, transparent 1px)
-        background-size: 100% 1rem   
-
-
-
-
-
-// Apply base font sizes and fonts
-// Applies the base variables to the whole document
-// * You probably don't need to change this
+    /* ---------  Vertical Rhythm Grid (used for testing purposes) ----------*/    
+    // body
+    //     background-image: linear-gradient(#bbb 1px, transparent 1px)
+    //     background-size: 100% 9px   
 
 
 
@@ -35,55 +27,60 @@ html, *
     line-height: 1.5
     color: var(--color-text-b)
 
+b, strong 
+    font-weight: bold
 
 h1, h2, h3, h4, h5, h6, form legend 
 
 
-b, strong 
-    font-weight: bold
-
 
 
 
 /*=============================================*/
-/*=           Website-Specific Styles         =*/
+/*=           Main Text Styles                =*/
 /*=============================================*/
 // to maintain vertical rhythm with spacing, use size values of .5rem increments.
 
 h1 
-    @include text(4xl)
-    font-weight: 300
-
+    @include text(3xl)
+    font-weight: 400
+    line-height: 4rem
+    margin-bottom: 1rem //trial
 
 h2 
-    @include text(3xl)
-    font-weight: 500
-
+    @include text(2xl)
+    font-weight: 400
+    line-height: 3rem
+    margin-bottom: 1rem //trial
 
 h3 
-    @include text(2xl)
+    @include text(xl)
     font-weight: 600
-
+    line-height: 2.5rem
+    margin-bottom: .5rem //trial
 
 h4 
-    @include text(xl)
-    font-weight: 500
-
+    @include text(lg)
+    font-weight: 600
+    line-height: 2rem
+    margin-bottom: .5rem //trial
 
 h5 
     @include text(lg)
     font-weight: 600
-
+    line-height: 2rem
+    margin-bottom: .5rem //trial
 
 h6 
     @include text(lg)
     font-weight: 600
+    line-height: 2rem
+    margin-bottom: .5rem //trial
 
-
-// p 
-//     @include text(md)
-//     font-weight: 500
-
+p 
+    @include text(md)
+    font-weight: 400
+    max-width: 40em //based on research
 
 // a 
 //     @include text(md)

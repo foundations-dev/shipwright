@@ -29,12 +29,12 @@ from https://github.com/CodyHouse/codyhouse-framework
 
 
 
-// optional - edit space unit and padding of all components at a specific breakpoint
-// TODO: TEST THIS FUNCTIONALITY
+// // optional - edit space unit and padding of all components at a specific breakpoint
+// // TODO: TEST THIS FUNCTIONALITY
 
-@include breakpoint(md) {
-    :root {
-        --space-unit: 1.25em;
-        --component-padding: var(--space-md);
-    }
-}
+// @include breakpoint(md) {
+//     :root {
+//         --space-unit: 1.25em;
+//         --component-padding: var(--space-md);
+//     }
+// }

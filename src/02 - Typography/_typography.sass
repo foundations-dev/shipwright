@@ -21,7 +21,6 @@
     //     background-size: 100% 9px   
 
 
-
 html, * 
     font-family: var(--font-primary)
     line-height: 1.5
@@ -30,10 +29,8 @@ html, *
 b, strong 
     font-weight: bold
 
-h1, h2, h3, h4, h5, h6, form legend 
-
-
-
+h1, h2, h3, h4, h5, h6
+    color: var(--color-text-h)
 
 
 /*=============================================*/
@@ -81,126 +78,43 @@ p
     @include text(md)
     font-weight: 400
     max-width: 40em //based on research
+    margin-bottom: 1rem
 
-// a 
-//     @include text(md)
-//     text-decoration: none
-//     font-weight: 600
-
-
-// @mixin text-button 
-//     font-family: var(--font-secondary)
-//     color: var(--color-text-heading)
-//     font-weight: 500
-//     @include text(md)
-//     letter-spacing: 0.02em
-//     text-transform: uppercase
+a 
+    @include text(md)
+    text-decoration: none
+    color: var(--color-primary)
+    font-weight: 600
 
 
-// .text-button 
-//     @include text-button
+/*=============================================*/
+/*=              Components                   =*/
+/*=============================================*/
+// NOTE: As of version 1.0.0, src/03-Components has not yet been implemented.
+//       This section is made of mixins that will be directly injected there.
+// TODO: add secondary font for these, italics? plex serif? plex mono?
 
+// This can be included in button selectors to style button text
+@mixin text-button 
+    font-family: var(--font-secondary)
+    color: var(--color-text-h)
+    font-weight: 500
+    @include text(md)
+    letter-spacing: 0.02em
+    text-transform: uppercase
 
-// @mixin text-caption 
-//     font-family: var(--font-secondary)
-//     color: var(--color-text-caption)
-//     font-weight: 600
-//     @include text(md)
-
-
-// .text-caption 
-//     @include text-caption
-
-
-/*=====  End of Website-Specific Styles ======*/
-
-
-
-    
+// This can be included in components to add a caption style
+@mixin text-caption 
+    font-family: var(--font-secondary)
+    color: var(--color-text-caption)
+    font-weight: 600
+    @include text(md)
 
 
 
+/*----------  Idk if this will be kept in here once we build the components section ----------*/
+.text-button
+    @include text-button
 
-
-
-
-
-
-
-// /* text size classes */
-
-// .text--xxxl 
-//     font-size: var(--text-xxxl)
-
-
-// .text--xxl 
-//     font-size: var(--text-xxl)
-//     color: var(--text-primary)
-
-
-// .text--xl 
-//     font-size: var(--text-xl)
-
-
-// .text--lg 
-//     font-size: var(--text-lg)
-
-
-// .text--md 
-//     font-size: var(--text-md)
-
-
-// .text--sm, small 
-//     font-size: var(--text-sm)
-
-
-// .text--xs 
-//     font-size: var(--text-xs)
-
-
-
-// Add this to automate margins inside text containers
-// margins have been removed everywhere else
-// @mixin text-container 
-// 	h2, h3, h4 
-// 	margin-top: var(--space-sm)
-
-
-// 	ul, ol, p 
-// 	margin-bottom: var(--space-md)
-
-
-// 	ul, ol 
-// 	list-style-position: outside
-// 	padding-left: 24px
-
-
-// 	ul 
-// 	list-style-type: disc
-
-
-// 	ol 
-// 	list-style-type: decimal
-
-
-// 	ul li, ol li 
-// 	line-height: $body-line-height
-
-
-// 	em 
-// 	font-style: italic
-
-
-// 	u 
-// 	text-decoration: underline
-    
-
-
-/* utility classes */
-.truncate 
-    // truncate text if it exceeds parent
-    overflow: hidden
-    text-overflow: ellipsis
-    white-space: nowrap
-
-
+.text-caption 
+    @include text-caption

@@ -1,0 +1,50 @@
+/*=============================================*/
+/*=              Define Variables             =*/
+/*=============================================*/
+
+// TODO: Fix implementation syntax to directly use spacing variables
+// ex. space-inset(md)
+// currently must enter it manually
+
+$squishing-ratio: 2
+// = ex. padding: 12px 8px 12px 8px
+$stretching-ratio: 3/2
+
+//  SPACE-INSET: For interface containers.
+//  SPACE-SQUISH: For buttons, table cells.
+//  STACK-SPACE: For vertically stacked content.
+//  SPACE-INLINE For things displayed inline.
+//  SPACE-STRETCH: For forms, textboxes.
+
+
+// Create inset-space
+// @param  {Number} inset-space to set
+@mixin space-inset($value) 
+    padding: $value
+
+
+// Create inset-squish-space
+// @param  {Number} inset-squish-space to set
+@mixin space-squish($value) 
+    padding: round($value / $squishing-ratio) $value round($value / $squishing-ratio)
+
+
+// Create inset-stretch-space
+// @param  {Number} inset-stretch-space to set
+@mixin space-stretch($value) 
+    padding: $value round($value / $stretching-ratio) $value
+
+
+// Create stack-space
+// @param  {Number} stack-space to set
+@mixin space-stack($value) 
+    margin-bottom: $value
+    &:last-child 
+        margin-bottom: 0
+
+// Create space-inline
+// @param  {Number} space-inline to set
+@mixin space-inline($value) 
+    margin-right: $value
+    &:last-child
+        margin-right: 0

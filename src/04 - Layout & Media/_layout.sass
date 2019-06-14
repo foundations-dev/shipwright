@@ -28,8 +28,9 @@
 
 /*----------  12/6/2 Grid Mixins  ----------*/
 
-// the main grid 12/6/2 column grid that will show up in each section
-@mixin main-grid
+// the template grid 12/6/2 column grid that will show up in each section
+
+@mixin grid-template
 	width: 88vw // Width of the grid layout 
 	max-width: 1200px
 	margin: auto
@@ -44,6 +45,17 @@
 		@include lg
 			grid-template-columns: repeat(12, 1fr)
 			grid-gap: 0 3%
+
+// often, we would like to keep something always full width
+// this mixin lets you do that easily
+@mixin grid-full
+	grid-column: 1/3
+
+	@include md
+		grid-column: 1/7
+
+		@include lg
+			grid-column: 1/13
 
 /*=============================================*/
 /*=         Main Section Definitions           =*/

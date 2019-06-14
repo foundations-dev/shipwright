@@ -15,15 +15,15 @@
 
 @mixin layout($elements...)
 	@each $element in $elements
-    	#{$element}
-      		grid-area: $element
+		#{$element}
+			grid-area: $element
 
 /*----------  Subsection comment block  ----------*/
 
 @mixin template($elements...)
-    @each $element in $elements
-        &__#{$element} 
-            grid-area: $element;
+	@each $element in $elements
+		&__#{$element} 
+			grid-area: $element
     
 
 /*----------  Subsection comment block  ----------*/
@@ -34,13 +34,10 @@
 /*=         Main Section Definitions           =*/
 /*=============================================*/
 body
-    display: grid
-    @include layout(header, main, footer)
-    grid-template-areas:
-        "footer"
-        "main"
-        "header"
+	display: grid
+	@include layout(header, main, footer)
+	grid-template-areas: "footer" "main" "header"
 
-    // outline divs for testing
-    & > *
-        borde: 1px solid blue
+	// outline divs for testing
+	& > *
+		border: 1px solid blue

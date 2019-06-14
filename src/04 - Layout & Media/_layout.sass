@@ -1,0 +1,11 @@
+/*=============================================*/
+/*=                  Imports                  =*/
+/*=============================================*/
+
+@import "_media"
+
+
+@mixin layout($elements...)
+	@each $element in $elements
+    	#{$element}
+      		grid-area: $element

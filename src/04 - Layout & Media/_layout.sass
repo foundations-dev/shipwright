@@ -5,7 +5,42 @@
 @import "_media"
 
 
+/*=============================================*/
+/*=                  Mixins                  =*/
+/*=============================================*/
+
+
+/*----------  This is used for placing the main content blocks   ----------*/
+/*----------  ex. header, main, footer   ----------*/
+
 @mixin layout($elements...)
 	@each $element in $elements
     	#{$element}
       		grid-area: $element
+
+/*----------  Subsection comment block  ----------*/
+
+@mixin template($elements...)
+    @each $element in $elements
+        &__#{$element} 
+            grid-area: $element;
+    
+
+/*----------  Subsection comment block  ----------*/
+@mixin main_grid
+
+
+/*=============================================*/
+/*=         Main Section Definitions           =*/
+/*=============================================*/
+body
+    display: grid
+    @include layout(header, main, footer)
+    grid-template-areas:
+        "footer"
+        "main"
+        "header"
+
+    // outline divs for testing
+    & > *
+        borde: 1px solid blue

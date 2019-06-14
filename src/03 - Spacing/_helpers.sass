@@ -18,32 +18,27 @@ $stretching-ratio: 3/2
 
 
 // Create inset-space
-// @param  {Number} inset-space to set
 @mixin space-inset($value) 
     padding: $value
 
 
 // Create inset-squish-space
-// @param  {Number} inset-squish-space to set
 @mixin space-squish($value) 
     padding: round($value / $squishing-ratio) $value round($value / $squishing-ratio)
 
 
 // Create inset-stretch-space
-// @param  {Number} inset-stretch-space to set
 @mixin space-stretch($value) 
     padding: $value round($value / $stretching-ratio) $value
 
 
 // Create stack-space
-// @param  {Number} stack-space to set
 @mixin space-stack($value) 
     margin-bottom: $value
     &:last-child 
         margin-bottom: 0
 
 // Create space-inline
-// @param  {Number} space-inline to set
 @mixin space-inline($value) 
     margin-right: $value
     &:last-child

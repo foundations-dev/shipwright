@@ -13,9 +13,7 @@ This design system exists to allow future me (and anyone I work with) effortless
 
 ## What's going on here?
 
-NP Design System is built with [Vue Design System](https://vueds.com). Vue Design System provides many more features than I can maintain, so this project, for the time being will be focused on the maintenance of tokens and elements that can be recycled throughout any of my projects, public or otherwise.
-
-Now, since Vue Design System was built to handle much more extensive systems, the tooling I included is all I could ever hope for in terms of designing, documenting, and publishing versatile systems. The stars of the show, (besides [Vue](https://vuejs.org/) of course) are [Vue Styleguidist](https://github.com/vue-styleguidist/vue-styleguidist) and [Theo](https://github.com/salesforce-ux/theo), a product from Salesforce for abstracting Design Tokens.
+This style guide is optimized for the *simplest* of use cases: styling a single html file. 
 
 ## Getting Started
 

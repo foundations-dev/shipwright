@@ -10,6 +10,7 @@ module.exports = {
 
                     'getting-started',
                     'principles',
+                    'directory-structure',
                 ]
             },
             {

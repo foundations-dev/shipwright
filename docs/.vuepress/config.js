@@ -26,5 +26,12 @@ module.exports = {
 
         ],
         displayAllHeaders: true
-    }
+    },
+    plugins: [
+        ['container', {
+            type: 'vue',
+            before: '<pre class="vue-container"><code>',
+            after: '</code></pre>',
+        }],
+    ]
 }

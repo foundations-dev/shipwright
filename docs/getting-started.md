@@ -7,6 +7,15 @@
 
 ---
 
+
+there are two ways to figure out what's going on here. If you like to learn things by first looking directly at the source code, use index.html
+
+if you like reading through the docs, keep going!
+
+
+
+
+
 ## Introduction
 
 This design system exists to allow future me (and anyone I work with) effortlessly implement any design research I've done. Too often, I spend dozens of hours on research and lose interest before applying it in any sort of productive way. The goal of this project is to ensure that I will be able to take advantage of the progress I make in spite of my fickle interest.

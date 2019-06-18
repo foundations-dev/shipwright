@@ -7,25 +7,24 @@ module.exports = {
                 title: 'Basics',
                 collapsable: false,
                 children: [
-
                     'getting-started',
                     'principles',
                     'directory-structure',
                 ]
             },
             {
-                title: 'Tokens',
+                title: 'Modules',
                 collapsable: false,
-
                 children: [
-                    'tokens/color',
-                    'tokens/font-size',
-                    'tokens/spacing'
+                    '00-Utility',
+                    '01-Color',
+                    '02-Typography',
+                    '03-Spacing',
+                    '04-Layout',
                 ]
-            }
-
+            },
         ],
-        displayAllHeaders: true
+        
     },
     plugins: [
         ['container', {

@@ -9,7 +9,7 @@ Other systems allow you to change the "primary" and "accent" colors somewhere in
 In NP design system, color system is powered by two files:
 * **`_colors.sass`** - A list of 7 accessible colors variables, with many shades for each.
 * **`_defaultcolors.sass`** - Where the developer can outline the list of color variables that will appear throughout their website
-
+    
 ## _colors.sass
 
 

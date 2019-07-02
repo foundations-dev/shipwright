@@ -1,4 +1,6 @@
 # Getting Started
+https://every-layout.dev/blog/algorithmic-design/
+
 
 #### Resources
 

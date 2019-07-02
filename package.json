@@ -10,8 +10,8 @@
     "private": false,
     "license": "MIT",
     "scripts": {
-        "start": "parcel src/index.html",
-        "styles": "parcel src/index.html",
+        "start": "parcel src/*.html",
+        "styles": "parcel src/*.html",
         "docs": "vuepress dev docs",
         "docs:build": "vuepress build docs"
     },

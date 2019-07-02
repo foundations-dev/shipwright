@@ -1,7 +1,8 @@
 module.exports = {
-    title: 'NP Design System',
-    description: 'NP Design System hosts the styles of New Perspectives.',
+    title: 'Shipwright',
+    description: 'Shipwright is the design system of New Perspectives.',
     themeConfig: {
+        logo: './images/hero-ship.png',
         sidebar: [
             {
                 title: 'Basics',
@@ -24,7 +25,7 @@ module.exports = {
                 ]
             },
         ],
-        
+
     },
     plugins: [
         ['container', {
@@ -32,5 +33,6 @@ module.exports = {
             before: '<pre class="vue-container"><code>',
             after: '</code></pre>',
         }],
-    ]
+    ],
+
 }

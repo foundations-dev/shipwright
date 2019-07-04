@@ -23,7 +23,7 @@ $screen-xl-min: 1440px // Desktop Computers
 
 // Adding min-height so that landscape phones aren't selected with this query
 @mixin md
-    @media only screen and (min-width: #{$screen-md-min}) and (min-height: #{$screen-md-min})
+    @media only screen and (min-width: #{$screen-md-min}) and (min-height: #{$screen-sm-min})
         @content
 
 @mixin lg

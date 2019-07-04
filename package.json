@@ -12,6 +12,7 @@
     "scripts": {
         "start": "parcel src/*.html",
         "styles": "parcel src/*.html",
+        "landing": "parcel landing/index.html",
         "docs": "vuepress dev docs",
         "docs:build": "vuepress build docs"
     },

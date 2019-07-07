@@ -98,8 +98,6 @@ section
             @include xl
                 top: 10vh
 
-
-
 button
     @include space-squish(16px)
     @include space-inline(16px)
@@ -117,6 +115,10 @@ button
         background: var(--color-acc-l)
         color: var(--color-bg-l)
 
+    &.disabled
+        background: var(--color-N300)
+        color: var(--color-N080)
+    
 
 main
     padding-top: var(--space-lg)

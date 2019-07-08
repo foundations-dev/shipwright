@@ -1,83 +1,31 @@
-# NP Design System
+<p align="center"><img src="img/logo.png" /></p>
 
-**NP Design System** hosts the styles of New Perspectives. It is built with [Vue Design System Project](https://github.com/viljamis/vue-design-system).
+<h1 align="center"> Shipwright </h1>
 
-## NPM Scripts
+<p align="center"> An abstraction-first CSS philosophy and framework <br> to help you implement your design system effectively. </p>
 
-`start` - Serves the Vue App at (http://localhost:8080/] and docs at (http://localhost:6060/)
+---
+### Features
+* Loosely Opinionated - Shipwright gives you a way to do things and the freedom to change it
+* Supports your Abstractions - Our philosophy is sort of an "abstraction for abstractions"-meaning it sets up some high-level guidelines to keep your abstractions contained, yet accessible
+* Just SASS Files - No need to worry about unseen bloat being added to your project. No need to worry about unclear build processes, either. If you've worked with SASS, you know how everything works.
+* Modular - Shipwright strives to keep each module useful in isolation. When it needs stuff from other files, it makes that clear.
 
-`build:system --report` - Builds the design system for NPM with report
+### Installation
 
-`build:docs` - Builds the design system docs
+1. Copy the files in `src` to wherever you're keeping your SASS files.
+2. To see an example, install [Parcel](https://parceljs.org/) and compile `src/index.html`
+```bash
+parcel src/index.html
+```
 
-`build:app` - Build Vue.js app (playground) for production _with minification._
-
-see original documentation below
+### Modules
+<p align="center"><img src="img/modules-diagram.png" /></p>
 
 ---
 
-[![Build status](https://travis-ci.org/viljamis/vue-design-system.svg?branch=master)](https://travis-ci.org/viljamis/vue-design-system/) ![Dependencies status](https://david-dm.org/viljamis/vue-design-system.svg) ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg) [![Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/vueds/Lobby)
+## Acknowledgements
+* [README Template](https://github.com/vladocar/boilerplate-readme-template/blob/master/README-Markdown.md)
 
-# Vue Design System
+Licensed under the [MIT license](https://github.com/earlman/np-design-system/blob/System-Redesign/LICENSE).
 
-**Vue Design System** is an open source tool for building UI Design Systems with [Vue.js](https://vuejs.org). It provides you and your team a set of organized tools, patterns & practices that work as the foundation for your application development.
-
-The tool is built on top of [Vue.js](https://vuejs.org), [Vue Styleguidist](https://github.com/vue-styleguidist/vue-styleguidist), [Webpack](https://webpack.js.org), and [Theo](https://github.com/salesforce-ux/theo) and is aimed for designers and front-end developers who have at least basic knowledge of component based workflows + HTML, SCSS & JavaScript.
-
-**Made by [@viljamis](https://twitter.com/viljamis) and other contributors. See also [the official website](https://vueds.com) of Vue Design System and [read my article](https://viljamis.com/2018/vue-design-system/) on the processes and workflow I use to get started with a new design system project.**
-
-[![Screenshot](./docs/preview.gif)](https://vueds.com/)
-
-## Features
-
-- A set of interconnected patterns & practices for you and your team.
-- A well thought-out terminology, naming conventions, and hierarchy.
-- Get an automated overview of how your design system progresses over time.
-- Global design tokens in YAML format that you can use inside any component.
-- Automatic generation of living, user editable documentation.
-- Easily export and use your Design System as an NPM dependency in another Vue.js or Nuxt.js project.
-- Create a token, an element, or a pattern, and it’s immediately available across all components.
-- Pre-configured Prettier setup for auto-formatting code on both save and before commit.
-- Live Reloading, Autoprefixing, SCSS, and helper functions + simple and sane defaults for SVG and Webfont usage out-of-the-box.
-- Documentation and the app logic are separated, so you can have public docs while the app itself stays private.
-- [And more…](https://vueds.com/)
-
-## Documentation
-
-- **[Getting Started](https://github.com/viljamis/vue-design-system/wiki/getting-started): How to install and run Vue Design System.**
-- [Terminology](https://github.com/viljamis/vue-design-system/wiki/terminology): Introduction to the system concepts and its hierarchy.
-- [Naming of Things](https://github.com/viljamis/vue-design-system/wiki/naming-of-Things): Naming is hard, so it’s good to have clear guidelines.
-- [Directory Structure](https://github.com/viljamis/vue-design-system/wiki/directory-structure): What goes where and why.
-- [Working with the System](https://github.com/viljamis/vue-design-system/wiki/working-with-the-system): Concrete examples on how to work with `Tokens`, `Elements` , `Patterns` and `Templates`.
-- [Editing Living Documentation](https://github.com/viljamis/vue-design-system/wiki/editing-living-documentation): How to customize the living system documentation.
-- [Spacing](https://github.com/viljamis/vue-design-system/wiki/spacing): A framework for creating a predictable and harmonious spacing.
-- [Component Status](https://github.com/viljamis/vue-design-system/wiki/Component-Status): Clear labels that reflect the state of completion.
-- [Component QA](https://github.com/viljamis/vue-design-system/wiki/Component-QA): How to review new components and keep the quality high.
-- [Contributing](https://github.com/viljamis/vue-design-system/blob/master/CONTRIBUTING.md): A set of guidelines for contributing to the system.
-- [Code of Conduct](https://github.com/viljamis/vue-design-system/blob/master/CODE_OF_CONDUCT.md): By participating you agree to abide by its terms.
-- [Frequently Asked Questions](<https://github.com/viljamis/vue-design-system/wiki/frequently-asked-questions-(FAQ)>): How to use icons, how to use font-face, etc.
-
-## Examples
-
-- **[Official example](https://vueds.com/example)**
-- [Using Vue Design System as NPM dependency on Vue.js project](https://github.com/viljamis/vue-design-system-example)
-- [Using Vue Design System as NPM Dependency on Nuxt.js project](https://github.com/viljamis/nuxt-design-system)
-- [Using Vue Design System as NPM Dependency on a static website](https://github.com/viljamis/vue-design-system-example-website)
-
-## Roadmap
-
-- See [Roadmap tag](https://github.com/viljamis/vue-design-system/issues?q=is%3Aissue+is%3Aopen+label%3Aroadmap) in the issues.
-
-## Changelog
-
-- See [Releases page](https://github.com/viljamis/vue-design-system/releases) for the full changelog.
-
-## Need more help?
-
-About to get started with a new design system? I’m an independent designer and developer, specialized in helping companies to build [design systems](https://vueds.com). I also conduct [design system workshops](https://viljamis.com/2018/vue-design-system/) and do consulting. [Let’s talk!](https://twitter.com/viljamis)
-
-## Authors and License
-
-[Viljami Salminen](https://viljamis.com), [Artem Sapegin](http://sapegin.me), [Rafael Escala](https://github.com/rafaesc), [react-styleguidist contributors](https://github.com/styleguidist/react-styleguidist/graphs/contributors), [vue-styleguidist contributors](https://github.com/vue-styleguidist/vue-styleguidist/graphs/contributors), [Vue.js contributors](https://github.com/vuejs/vue/graphs/contributors), [vue-webpack-boilerplate contributors](https://github.com/vuejs-templates/webpack/graphs/contributors), [Theo contributors](https://github.com/salesforce-ux/theo/graphs/contributors), and [Polaris contributors](https://github.com/Shopify/polaris).
-
-Licensed under the [MIT license](https://github.com/viljamis/vue-design-system/blob/master/LICENSE).

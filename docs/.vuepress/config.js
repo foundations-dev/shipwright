@@ -3,7 +3,7 @@ module.exports = {
     description: 'Shipwright is the design system of New Perspectives.',
     dest: '../dist/docs',
     themeConfig: {
-        logo: './images/hero-ship.png',
+        logo: '/assets/logo.png', //located in public folder
         sidebar:
             [
                 {
@@ -50,5 +50,12 @@ module.exports = {
             after: '</code></pre>',
         }],
     ],
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@img': '../../img'
+            }
+        }
+    }
 
 }

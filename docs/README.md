@@ -2,4 +2,4 @@
 
 # Hello VuePress
 
-![Image](./images/hero-ship.png)
+![Image](~@img/classic-ship.png)

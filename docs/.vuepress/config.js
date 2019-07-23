@@ -1,6 +1,7 @@
 module.exports = {
     title: 'Shipwright',
     description: 'Shipwright is the design system of New Perspectives.',
+    dest: '../dist/docs',
     themeConfig: {
         logo: './images/hero-ship.png',
         sidebar: [

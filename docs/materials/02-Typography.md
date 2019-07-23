@@ -1,3 +1,8 @@
+---
+title: "Typography"
+path: "materials/typography"
+---
+
 # 02 - Typography
 
 # Old Docs

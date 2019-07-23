@@ -1,3 +1,8 @@
+---
+title: "Colors"
+path: "materials/colors"
+---
+
 # 01 - Colors
 
 ## Introduction

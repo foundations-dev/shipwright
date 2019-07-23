@@ -4,28 +4,43 @@ module.exports = {
     dest: '../dist/docs',
     themeConfig: {
         logo: './images/hero-ship.png',
-        sidebar: [
-            {
-                title: 'The Essentials',
-                collapsable: false,
-                children: [
-                    'principles',
-                    'organization',
-                    'materials',
-                ]
-            },
-            {
-                title: 'The Materials',
-                collapsable: false,
-                children: [
-                    '00-Utility',
-                    '01-Color',
-                    '02-Typography',
-                    '03-Spacing',
-                    '04-Layout',
-                ]
-            },
-        ],
+        sidebar:
+            [
+                {
+                    title: 'The Essentials',
+                    path: '/essentials/',
+                    collapsable: false,
+                    sidebarDepth: 2,
+                    children: [
+                        '/essentials/1-principles',
+                        '/essentials/2-implementation',
+                        '/essentials/3-organization',
+                    ]
+                },
+                {
+                    title: 'The Materials',
+                    path: '/materials/',
+                    collapsable: false,
+                    children: [
+                        '/materials/00-Utility',
+                        '/materials/01-Color',
+                        '/materials/02-Typography',
+                        '/materials/03-Spacing',
+                        '/materials/04-Layout',
+                    ]
+                },
+                // {
+                //     title: 'The Materials',
+                //     collapsable: false,
+                //     children: [
+                //         '00-Utility',
+                //         '01-Color',
+                //         '02-Typography',
+                //         '03-Spacing',
+                //         '04-Layout',
+                //     ]
+                // },
+            ],
 
     },
     plugins: [

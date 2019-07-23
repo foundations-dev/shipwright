@@ -13,8 +13,8 @@ module.exports = {
                     sidebarDepth: 2,
                     children: [
                         '/essentials/1-principles',
-                        '/essentials/2-implementation',
-                        '/essentials/3-organization',
+                        '/essentials/2-organization',
+                        '/essentials/3-implementation',
                     ]
                 },
                 {

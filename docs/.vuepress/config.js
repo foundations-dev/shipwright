@@ -6,16 +6,16 @@ module.exports = {
         logo: './images/hero-ship.png',
         sidebar: [
             {
-                title: 'Basics',
+                title: 'The Essentials',
                 collapsable: false,
                 children: [
-                    'getting-started',
                     'principles',
-                    'directory-structure',
+                    'organization',
+                    'materials',
                 ]
             },
             {
-                title: 'Modules',
+                title: 'The Materials',
                 collapsable: false,
                 children: [
                     '00-Utility',

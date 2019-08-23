@@ -12,9 +12,10 @@ module.exports = {
                     collapsable: false,
                     sidebarDepth: 2,
                     children: [
-                        '/essentials/1-principles',
-                        '/essentials/2-organization',
-                        '/essentials/3-implementation',
+                        '/essentials/1-introduction',
+                        '/essentials/2-principles',
+                        '/essentials/3-organization',
+                        '/essentials/4-implementation',
                     ]
                 },
                 {

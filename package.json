@@ -92,7 +92,8 @@
         "autoprefixer": "^9.6.0",
         "postcss": "^7.0.17",
         "vue": "^2.6.10",
-        "vue-server-renderer": "^2.6.10"
+        "vue-server-renderer": "^2.6.10",
+        "vuepress-plugin-container": "^2.0.2"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0-0",

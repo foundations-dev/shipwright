@@ -90,10 +90,14 @@
     "dependencies": {
         "@csstools/postcss-sass": "^4.0.0",
         "autoprefixer": "^9.6.0",
+        "core-js": "^3.4.2",
+        "mini-css-extract-plugin": "^0.8.0",
+        "parcel": "^1.12.4",
         "postcss": "^7.0.17",
         "vue": "^2.6.10",
         "vue-server-renderer": "^2.6.10",
-        "vuepress-plugin-container": "^2.0.2"
+        "vuepress-plugin-container": "^2.0.2",
+        "webpack": "^4.41.2"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0-0",

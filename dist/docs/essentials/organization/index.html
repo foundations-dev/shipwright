@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Organization | Shipwright</title>
+    <meta name="description" content="Shipwright is the design system of New Perspectives.">
+    
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.3b238df6.css" as="style"><link rel="preload" href="/docs/assets/js/app.557a8bd8.js" as="script"><link rel="preload" href="/docs/assets/js/3.a7985108.js" as="script"><link rel="preload" href="/docs/assets/js/2.9a34ea61.js" as="script"><link rel="preload" href="/docs/assets/js/12.f8826876.js" as="script"><link rel="preload" href="/docs/assets/js/4.736a23fe.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.52b1d80f.js"><link rel="prefetch" href="/docs/assets/js/11.918c6ca2.js"><link rel="prefetch" href="/docs/assets/js/13.9c94fa6b.js"><link rel="prefetch" href="/docs/assets/js/14.294632f3.js"><link rel="prefetch" href="/docs/assets/js/15.e51c6f7d.js"><link rel="prefetch" href="/docs/assets/js/16.661c7f97.js"><link rel="prefetch" href="/docs/assets/js/17.ef3e2bc9.js"><link rel="prefetch" href="/docs/assets/js/18.49eac0cb.js"><link rel="prefetch" href="/docs/assets/js/19.6d6e216c.js"><link rel="prefetch" href="/docs/assets/js/20.00b4032e.js"><link rel="prefetch" href="/docs/assets/js/21.1a07a9ab.js"><link rel="prefetch" href="/docs/assets/js/5.60c3b021.js"><link rel="prefetch" href="/docs/assets/js/6.543523d6.js"><link rel="prefetch" href="/docs/assets/js/7.ed785120.js"><link rel="prefetch" href="/docs/assets/js/8.830e0fcb.js"><link rel="prefetch" href="/docs/assets/js/9.09ee828d.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.3b238df6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/logo.png" alt="Shipwright" class="logo"> <span class="site-name can-hide">Shipwright</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/docs/essentials/" class="sidebar-heading clickable router-link-active open"><span>The Essentials</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/essentials/introduction/" class="sidebar-link">Introduction</a></li><li><a href="/docs/essentials/principles/" class="sidebar-link">Principles</a></li><li><a href="/docs/essentials/organization/" class="active sidebar-link">Organization</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/essentials/organization/#directory-structure" class="sidebar-link">Directory Structure</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/essentials/organization/#np-design-system-sass" class="sidebar-link">np-design-system.sass</a></li></ul></li></ul></li><li><a href="/docs/essentials/implementation/" class="sidebar-link">Implementation</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/docs/materials/" class="sidebar-heading clickable"><span>The Materials</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/materials/00-Utility.html" class="sidebar-link">Utils</a></li><li><a href="/docs/materials/01-Color.html" class="sidebar-link">Colors</a></li><li><a href="/docs/materials/02-Typography.html" class="sidebar-link">Typography</a></li><li><a href="/docs/materials/03-Spacing.html" class="sidebar-link">Spacing</a></li><li><a href="/docs/materials/04-Layout.html" class="sidebar-link">Layout</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="organization"><a href="#organization" aria-hidden="true" class="header-anchor">#</a> Organization</h1> <h2 id="directory-structure"><a href="#directory-structure" aria-hidden="true" class="header-anchor">#</a> Directory Structure</h2> <p>This project's structure focuses on making the design components as easy to find as possible.</p> <pre class="vue-container"><code><p>src
+├── 00 - Utils
+│   ├── _index.sass
+│   ├── _normalize.scss
+│   └── _utils.sass
+│
+├── 01 - Color
+│   ├── _colors.sass
+│   ├── _defaultcolors.sass
+│   └── _index.sass
+│
+├── 02 - Typography
+│   ├── _fonts.sass
+│   ├── _index.sass
+│   └── _text-sizes.sass
+│   └── _typography.sass
+│
+├── 03 - Spacing
+│   ├── _helpers.sass
+│   ├── _index.sass
+│   └── _space-sizes.sass
+│
+├── 04 - Layout
+│   ├── _index.sass
+│   ├── _layout.sass
+│   └── _media.sass
+│
+├── index.html
+└── np-design-system.sass</p>
+</code></pre><h3 id="np-design-system-sass"><a href="#np-design-system-sass" aria-hidden="true" class="header-anchor">#</a> np-design-system.sass</h3> <p>This file is the starting point for the entire system. It's composed of 3 sections.</p> <div class="collapsed"><button>Show np-design-system.sass</button> <div style="display:none;"><div class="language-sass extra-class"><pre class="language-sass"><code>
+<span class="token comment">/*===============================================*/</span>
+<span class="token comment">/*=              1) Import Modules              =*/</span>
+<span class="token comment">/*===============================================*/</span>
+
+<span class="token atrule-line"><span class="token atrule">@import</span> &quot;00 - Utility&quot;</span>
+<span class="token atrule-line"><span class="token atrule">@import</span> &quot;01 - Color&quot;</span>
+<span class="token atrule-line"><span class="token atrule">@import</span> &quot;02 - Typography&quot;</span>
+<span class="token atrule-line"><span class="token atrule">@import</span> &quot;03 - Spacing&quot;</span>
+<span class="token atrule-line"><span class="token atrule">@import</span> &quot;04 - Layout&quot;</span>
+
+<span class="token comment">/*===============================================*/</span>
+<span class="token comment">/*=               2) Tests                      =*/</span>
+<span class="token comment">/*===============================================*/</span>
+
+<span class="token selector">html</span>
+<span class="token property-line">    <span class="token property">background-color</span><span class="token punctuation">:</span> var(--color-bg-l) <span class="token operator">/</span><span class="token operator">/</span> Check default colors exists</span>
+    <span class="token comment">// background-color: var(--color-N030) // Check colors file exist</span>
+    <span class="token comment">// background-color: red // Check styles are connected</span>
+
+<span class="token comment">/*===============================================*/</span>
+<span class="token comment">/*=            3) Style Guide Styles            =*/</span>
+<span class="token comment">/*===============================================*/</span>
+
+<span class="token selector">header</span><span class="token selector">,</span>
+<span class="token selector">footer</span>
+<span class="token property-line">    <span class="token property">min-height</span><span class="token punctuation">:</span> var(--space-lg) </span>
+<span class="token property-line">    <span class="token property">padding</span><span class="token punctuation">:</span> var(--space-sm)</span>
+<span class="token property-line">    <span class="token property">text-align</span><span class="token punctuation">:</span> center</span>
+<span class="token property-line">    <span class="token property">background-color</span><span class="token punctuation">:</span> var(--color-acc-d)</span>
+    
+    <span class="token selector">h4</span>
+<span class="token property-line">        <span class="token property">color</span><span class="token punctuation">:</span> var(--color-text-h-l)</span>
+
+
+
+<span class="token comment">/*----------  Showing how the main grid works  ----------*/</span>
+
+<span class="token selector">main</span>
+    <span class="token comment">//this is how you add the 12/6/2 column grid</span>
+<span class="token atrule-line">    <span class="token atrule">@include</span> grid-template</span>
+
+<span class="token comment">// There are two ways to implement this</span>
+
+<span class="token comment">// // 1</span>
+<span class="token comment">// .content</span>
+<span class="token comment">//     grid-column: 1/3</span>
+<span class="token comment">//     justify-self: center</span>
+<span class="token comment">//     //border: 1px solid red
+    </span>
+<span class="token comment">//     @include md</span>
+<span class="token comment">//         grid-column: 1/7</span>
+
+<span class="token comment">//         @include lg</span>
+<span class="token comment">//             grid-column: 1/13</span>
+
+<span class="token comment">// 2</span>
+<span class="token selector">.content</span>
+<span class="token atrule-line">    <span class="token atrule">@include</span> space-stretch(16px)</span>
+<span class="token atrule-line">    <span class="token atrule">@include</span> grid-full</span>
+</code></pre></div></div></div> <h4 id="_1-import-modules"><a href="#_1-import-modules" aria-hidden="true" class="header-anchor">#</a> 1) Import Modules</h4> <p>Here we import each folder of the design system. By importing the folder name, we take advantage of Sass's ability to automatically compile the <code>_index</code> file of each folder.</p> <p>The only thing contained in these <code>_index</code> files are import statements to the files in each respective folder.</p> <p>For example, in <code>src/00 - Utils/_index.sass</code></p> <div class="language- extra-class"><pre class="language-text"><code>Not found: D:\Projects\000 - New Perspectives\023 - np-design-system\System Redesign\src\00 - Utils\_index.sass</code></pre></div><h4 id="_2-tests"><a href="#_2-tests" aria-hidden="true" class="header-anchor">#</a> 2) Tests</h4> <p>This section currently doesn't have much. The purpose is to make sure all the variables are properly imported and working correctly. When I decide how I will integrate testing into this system, this section will likely change.</p> <h4 id="_3-style-guide-styles"><a href="#_3-style-guide-styles" aria-hidden="true" class="header-anchor">#</a> 3) Style Guide Styles</h4> <p>This section includes the styles that are specific to the Style Guide which lives at <code>src/index.html</code>.</p> <p>Notice this section is much shorter than you would expect. That's important because it allows developers to see what our global abstractions end up looking like on a standard website. It's a bad sign if this starts to get filled up with one-off css tweaks. The more lines of css you need at a single-page level, the less globally-applicable your style guide is.</p> <p>When it comes down to it, this is what abstraction-first means. If you don't agree with this philosophy, <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">Tailwind<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, a utility-first framework, might be the right solution for you.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/docs/essentials/principles/" class="prev">
+          Principles
+        </a></span> <span class="next"><a href="/docs/essentials/implementation/">
+          Implementation
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.557a8bd8.js" defer></script><script src="/docs/assets/js/3.a7985108.js" defer></script><script src="/docs/assets/js/2.9a34ea61.js" defer></script><script src="/docs/assets/js/12.f8826876.js" defer></script><script src="/docs/assets/js/4.736a23fe.js" defer></script>
+  </body>
+</html>

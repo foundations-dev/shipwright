@@ -17,9 +17,7 @@ jobs:
           node-version: 12
       - run: npm install -g yarn # Yarn is the package manager of choice with this project.
       - name: Install dependencies and build
-        run:
-          yarn install
-          yarn run build
+        run: yarn add && yarn run build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

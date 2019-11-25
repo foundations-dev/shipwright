@@ -18,6 +18,33 @@
         "build": "yarn run build:system"
     },
     "unpkg": "/dist/np-design-system.css",
+    "release": {
+        "plugins": [
+            [
+                "@semantic-release/git",
+                {
+                    "assets": [
+                        "dist/**/*.{js,css}",
+                        "docs",
+                        "package.json"
+                    ],
+                    "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+            ]
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog",
+            "maxHeaderWidth": 100,
+            "maxLineWidth": 100,
+            "defaultType": "",
+            "defaultScope": "",
+            "defaultSubject": "",
+            "defaultBody": "",
+            "defaultIssues": ""
+        }
+    },
     "repository": {
         "type": "git",
         "url": "git"
@@ -78,7 +105,9 @@
     "dependencies": {
         "@csstools/postcss-sass": "^4.0.0",
         "autoprefixer": "^9.6.0",
+        "commitizen": "^4.0.3",
         "core-js": "^3.4.2",
+        "cz-conventional-changelog": "^3.0.2",
         "mini-css-extract-plugin": "^0.8.0",
         "parcel": "^1.12.4",
         "postcss": "^7.0.17",
@@ -93,6 +122,7 @@
         "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
         "@babel/plugin-syntax-dynamic-import": "^7.2.0",
         "@babel/preset-react": "^7.7.4",
+        "@semantic-release/git": "^7.0.18",
         "babel-preset-env": "^1.7.0",
         "parcel-bundler": "^1.12.3",
         "parcel-plugin-static-zip": "^0.0.7",

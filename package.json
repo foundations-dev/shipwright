@@ -1,5 +1,6 @@
 {
   "name": "@foundations.dev/shipwright",
+    "version": "0.2.1-beta.2",
     "description": "Shipwright is an abstraction-first CSS philosophy and framework to help you implement your design system effectively.",
     "author": "Earl Man",
     "main": "",

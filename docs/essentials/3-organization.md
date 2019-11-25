@@ -4,7 +4,6 @@ permalink: essentials/organization
 ---
 # Organization
 
-
 ## Directory Structure
 
 This project's structure focuses on making the design components as easy to find as possible.
@@ -41,7 +40,7 @@ src
 └── np-design-system.sass
 :::
 
-## np-design-system.sass
+### np-design-system.sass
 
 This file is the starting point for the entire system. It's composed of 3 sections.
 
@@ -51,7 +50,7 @@ This file is the starting point for the entire system. It's composed of 3 sectio
 
 </collapse-text>
 
-### 1) Import Modules
+#### 1) Import Modules
 
 Here we import each folder of the design system. By importing the folder name, we take advantage of Sass's ability to automatically compile the `_index` file of each folder.
 
@@ -61,11 +60,11 @@ For example, in `src/00 - Utils/_index.sass`
 
 <<< @/src/00 - Utils/_index.sass
 
-### 2) Tests
+#### 2) Tests
 
 This section currently doesn't have much. The purpose is to make sure all the variables are properly imported and working correctly. When I decide how I will integrate testing into this system, this section will likely change.
 
-### 3) Style Guide Styles
+#### 3) Style Guide Styles
 
 This section includes the styles that are specific to the Style Guide which lives at `src/index.html`.
 

@@ -1,3 +1,9 @@
+---
+title: Introduction
+permalink: essentials/introduction
+---
+# Introduction
+
 (from readme)
 
 This project is a guide to architecting CSS in an abstraction-focused way. The goal of this project is to provide developers a set of practices that will allow them to ensure that their CSS is built to allow for confident system-wide changes.
@@ -6,9 +12,10 @@ As it goes with methodologies, there are obviously cases where there's more valu
 
 Shipwright wholeheartedly embraces this mindset, and we aim to make it clear how each of the pieces in this system are connected so that developers can relax their worries that their customizations are breaking some piece of functionality. Resting developer's worries-a difficult endeavor for sure, but one we're happy to commit to. 
 
----
+ ---
 
-# Getting Started
+
+## Getting Started
 https://every-layout.dev/blog/algorithmic-design/
 
 

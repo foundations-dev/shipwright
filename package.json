@@ -1,12 +1,10 @@
 {
-  "name": "@foundations.dev/shipwright",
+    "name": "@foundations.dev/shipwright",
     "version": "0.2.1-beta.2",
     "description": "Shipwright is an abstraction-first CSS philosophy and framework to help you implement your design system effectively.",
     "author": "Earl Man",
-    "main": "",
-    "files": [
-        ""
-    ],
+    "main": "/dist/np-design-system.css",
+    "files": [],
     "private": false,
     "license": "MIT",
     "scripts": {
@@ -14,9 +12,12 @@
         "styles": "parcel src/*.html",
         "landing": "parcel landing/index.html",
         "docs": "vuepress dev docs",
-        "docs:build": "vuepress build docs",
-        "build": "parcel build landing/index.html"
+        "build:docs": "vuepress build docs",
+        "build:landing": "parcel build landing/index.html",
+        "build:system": "parcel build src/np-design-system.sass",
+        "build": "parcel build landing/index.html && vuepress build docs"
     },
+    "unpkg": "/dist/np-design-system.css",
     "repository": {
         "type": "git",
         "url": "git"
@@ -34,7 +35,7 @@
         "plugins": [
             "@babel/plugin-proposal-class-properties",
             "@babel/plugin-transform-runtime"
-                ]
+        ]
     },
     "eslintConfig": {
         "extends": [
@@ -114,8 +115,9 @@
         "not OperaMini all",
         "not OperaMobile > 0"
     ],
-    "bugs": {},
-    "directories": {},
+    "directories": {
+        "doc": "docs"
+    },
     "parcel-plugin-static-zip": {
         "shipwright.zip": {
             "glob": "**/*",

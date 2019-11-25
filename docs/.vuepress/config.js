@@ -1,7 +1,8 @@
 module.exports = {
     title: 'Shipwright',
     description: 'Shipwright is the design system of New Perspectives.',
-    dest: '../dist/docs',
+    dest: 'dist/docs',
+    base: '/docs/',
     themeConfig: {
         logo: '/assets/logo.png', //located in public folder
         sidebar:
@@ -57,6 +58,7 @@ module.exports = {
                 '@img': '../../img'
             }
         }
-    }
+    },
+
 
 }

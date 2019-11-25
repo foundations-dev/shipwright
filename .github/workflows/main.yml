@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - System-Redesign
 jobs:
   release:
     name: Release

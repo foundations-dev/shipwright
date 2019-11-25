@@ -15,8 +15,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Install dependencies
-        run: npm ci
+      - run: npm install -g yarn # Yarn is the package manager of choice with this project.
+      - name: Install dependencies and build
+        run:
+          yarn install
+          yarn run build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

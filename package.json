@@ -15,7 +15,7 @@
         "build:docs": "vuepress build docs",
         "build:landing": "parcel build landing/index.html",
         "build:system": "parcel build src/np-design-system.sass",
-        "build": "parcel build landing/index.html && vuepress build docs"
+        "build": "yarn run build:system"
     },
     "unpkg": "/dist/np-design-system.css",
     "repository": {

@@ -15,7 +15,8 @@
         "build:docs": "vuepress build docs",
         "build:landing": "parcel build landing/index.html",
         "build:system": "parcel build src/np-design-system.sass",
-        "build": "yarn run build:system"
+        "build": "yarn run build:system",
+        "semantic-release": "semantic-release"
     },
     "unpkg": "/dist/np-design-system.css",
     "release": {
@@ -47,7 +48,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git"
+        "url": "https://github.com/earlman/Shipwright"
     },
     "keywords": [
         "design system",
@@ -129,7 +130,8 @@
         "postcss-import": "^12.0.1",
         "postcss-url": "^8.0.0",
         "sass": "^1.21.0",
-        "vuepress": "^1.0.3"
+        "vuepress": "^1.0.3",
+        "semantic-release": "^15.13.31"
     },
     "engines": {
         "node": ">= 8.6.0",

@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Checkout Submodules
-        uses: textbook/git-checkout-submodule-action@master
+        run: git submodule update --init --recursive
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:

@@ -1,0 +1,35 @@
+// This system uses mobile-first approach
+
+
+/*=============================================
+/*=              Define Variables             =
+/*=============================================*/    
+/* NOTE: SASS variables are used in this file to allow variable use within the media query selectors */
+
+$screen-sm-min: 576px // Landscape phones
+$screen-md-min: 768px // Tablets
+$screen-lg-min: 992px // Laptops
+$screen-xl-min: 1440px // Desktop Computers
+
+// Adding a new screen size to target landscape phones more easily
+    
+/*===================================================
+/*=      Create Mixin to @include Media Query       =
+/*=================================================*/        
+
+@mixin sm
+    @media only screen and (min-width: #{$screen-sm-min})
+        @content
+
+// Adding min-height so that landscape phones aren't selected with this query
+@mixin md
+    @media only screen and (min-width: #{$screen-md-min}) and (min-height: #{$screen-sm-min})
+        @content
+
+@mixin lg
+    @media only screen and (min-width: #{$screen-lg-min}) 
+        @content
+
+@mixin xl
+    @media only screen and (min-width: #{$screen-xl-min})  
+        @content

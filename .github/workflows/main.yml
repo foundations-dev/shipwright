@@ -9,10 +9,14 @@ jobs:
     name: Release
     runs-on: ubuntu-18.04
     steps:
+      - name: Fix submodules
+        run: echo -e '[url "https://github.com/"]\n  insteadOf = "git@github.com:"' >> ~/.gitconfig
       - name: Checkout
         uses: actions/checkout@v1
         with:
-            submodules: true
+          ref: master
+          token: ${{ secrets.GITHUB_PAT }}
+          submodules: true
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:

@@ -1,2 +1,907 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}*{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}body,h1,h2,h3,h4,h5,h6{margin:0}*{box-sizing:border-box}:root{--color-N000:#fff;--color-N010:#fafbfc;--color-N020:#f4f5f7;--color-N030:#ebecf0;--color-N040:#dfe1e6;--color-N050:#c1c7d0;--color-N060:#b3bac5;--color-N070:#a5adba;--color-N080:#97a0af;--color-N090:#8993a4;--color-N100:#7a869a;--color-N200:#6b778c;--color-N300:#5e6c84;--color-N400:#505f79;--color-N500:#42526e;--color-N600:#344563;--color-N700:#253858;--color-N800:#172b4d;--color-N900:#091e42;--color-R050:#ffebe6;--color-R075:#ffbdad;--color-R100:#ff8f73;--color-R200:#ff7452;--color-R300:#ff5630;--color-R400:#de350b;--color-R500:#bf2600;--color-Y050:#fffae6;--color-Y075:#fff0b3;--color-Y100:#ffe380;--color-Y200:#ffc400;--color-Y300:#ffab00;--color-Y400:#ff991f;--color-Y500:#ff8b00;--color-G050:#e3fcef;--color-G075:#abf5d1;--color-G100:#79f2c0;--color-G200:#57d9a3;--color-G300:#36b37e;--color-G400:#00875a;--color-G500:#064;--color-T050:#e6fcff;--color-T075:#b3f5ff;--color-T100:#79e2f2;--color-T200:#00c7e6;--color-T300:#00b8d9;--color-T400:#00a3bf;--color-T500:#008da6;--color-B050:#deebff;--color-B075:#b3d4ff;--color-B100:#4c9aff;--color-B200:#2684ff;--color-B300:#0065ff;--color-B400:#0052cc;--color-B500:#0747a6;--color-P050:#eae6ff;--color-P075:#c0b6f2;--color-P100:#998dd9;--color-P200:#8777d9;--color-P300:#6554c0;--color-P400:#5243aa;--color-P500:#403294;--color-p:var(--color-P400);--color-a:var(--color-T100);--color-a-alt:var(--color-P500);--color-b:var(--color-N010);--color-b-alt:var(--color-N800);--color-t:var(--color-N900);--color-t-alt:var(--color-N020);--color-t-h:var(--color-N800);--color-t-h-alt:var(--color-N040);--d-base-font-size:18px;--m-base-font-size:16px;--d-multiplier:1.333;--m-multiplier:1.250;--d-xs:calc(var(--d-base-font-size)/var(--d-multiplier)*var(--d-multiplier));--d-sm:calc(var(--d-base-font-size)/var(--d-multiplier));--d-md:var(--d-base-font-size);--d-lg:calc(var(--d-base-font-size)*var(--d-multiplier));--d-xl:calc(var(--d-base-font-size)*var(--d-multiplier)*var(--d-multiplier));--d-2xl:calc(var(--d-base-font-size)*var(--d-multiplier)*var(--d-multiplier)*var(--d-multiplier));--d-3xl:calc(var(--d-base-font-size)*var(--d-multiplier)*var(--d-multiplier)*var(--d-multiplier)*var(--d-multiplier));--d-4xl:calc(var(--d-base-font-size)*var(--d-multiplier)*var(--d-multiplier)*var(--d-multiplier)*var(--d-multiplier)*var(--d-multiplier));--m-xs:calc(var(--m-base-font-size)/var(--m-multiplier)*var(--m-multiplier));--m-sm:calc(var(--m-base-font-size)/var(--m-multiplier));--m-md:var(--m-base-font-size);--m-lg:calc(var(--m-base-font-size)*var(--m-multiplier));--m-xl:calc(var(--m-base-font-size)*var(--m-multiplier)*var(--m-multiplier));--m-2xl:calc(var(--m-base-font-size)*var(--m-multiplier)*var(--m-multiplier)*var(--m-multiplier));--m-3xl:calc(var(--m-base-font-size)*var(--m-multiplier)*var(--m-multiplier)*var(--m-multiplier)*var(--m-multiplier));--m-4xl:calc(var(--m-base-font-size)*var(--m-multiplier)*var(--m-multiplier)*var(--m-multiplier)*var(--m-multiplier))}html{font-size:var(--m-base-font-size)}@media (min-width:768px){html{font-size:var(--d-base-font-size)}}@font-face{font-family:IBM Plex Sans;font-style:normal;font-weight:300;font-display:swap;src:local("IBM Plex Sans Light"),local("IBMPlexSans-Light"),url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFsdA.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:IBM Plex Sans;font-style:normal;font-weight:400;font-display:swap;src:local("IBM Plex Sans"),local("IBMPlexSans"),url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:IBM Plex Sans;font-style:normal;font-weight:500;font-display:swap;src:local("IBM Plex Sans Medium"),local("IBMPlexSans-Medium"),url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:IBM Plex Sans;font-style:normal;font-weight:600;font-display:swap;src:local("IBM Plex Sans SemiBold"),local("IBMPlexSans-SemiBold"),url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFsdA.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:IBM Plex Sans;font-style:normal;font-weight:700;font-display:swap;src:local("IBM Plex Sans Bold"),local("IBMPlexSans-Bold"),url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}:root{--font-primary:"IBM Plex Sans",sans}*,html{font-family:var(--font-primary);line-height:1.5;color:var(--color-t-b)}b,strong{font-weight:700}h1,h2,h3,h4,h5,h6{color:var(--color-t-h)}h1{font-size:var(--m-3xl);font-weight:400;line-height:4rem;margin-bottom:1rem}@media (min-width:768px){h1{font-size:var(--d-3xl)}}h2{font-size:var(--m-2xl);font-weight:400;line-height:3rem;margin-bottom:1rem}@media (min-width:768px){h2{font-size:var(--d-2xl)}}h3{font-size:var(--m-xl);font-weight:600;line-height:2.5rem;margin-bottom:.5rem}@media (min-width:768px){h3{font-size:var(--d-xl)}}h4{font-size:var(--m-lg);font-weight:600;line-height:2rem;margin-bottom:.5rem}@media (min-width:768px){h4{font-size:var(--d-lg)}}h5{font-size:var(--m-lg);font-weight:600;line-height:2rem;margin-bottom:.5rem}@media (min-width:768px){h5{font-size:var(--d-lg)}}h6{font-size:var(--m-lg);font-weight:600;line-height:2rem;margin-bottom:.5rem}@media (min-width:768px){h6{font-size:var(--d-lg)}}p{font-size:var(--m-md);font-weight:400;max-width:40em;margin-bottom:1rem}@media (min-width:768px){p{font-size:var(--d-md)}}a{font-size:var(--m-md);text-decoration:none;color:var(--color-primary);font-weight:600}@media (min-width:768px){a{font-size:var(--d-md)}}.text-button{font-family:var(--font-secondary);color:var(--color-t-h);font-weight:500;font-size:var(--m-md);letter-spacing:.02em;text-transform:uppercase}@media (min-width:768px){.text-button{font-size:var(--d-md)}}.text-caption{font-family:var(--font-secondary);color:var(--color-t-caption);font-weight:600;font-size:var(--m-md)}@media (min-width:768px){.text-caption{font-size:var(--d-md)}}:root{--space-unit:1rem;--space-3xs:calc(0.25*var(--space-unit));--space-2xs:calc(0.5*var(--space-unit));--space-xs:calc(1*var(--space-unit));--space-sm:calc(1.5*var(--space-unit));--space-md:calc(2.5*var(--space-unit));--space-lg:calc(4*var(--space-unit));--space-xl:calc(6.5*var(--space-unit));--space-2xl:calc(10.5*var(--space-unit));--space-3xl:calc(17*var(--space-unit))}body{display:-ms-grid;display:grid;grid-template-areas:"header" "main" "footer"}body header{-ms-grid-row:1;-ms-grid-column:1;grid-area:header}body main{-ms-grid-row:2;-ms-grid-column:1;grid-area:main}body footer{-ms-grid-row:3;-ms-grid-column:1;grid-area:footer}html{background-color:var(--color-b)}footer,header{min-height:var(--space-lg);padding:var(--space-sm);text-align:center;background-color:var(--color-acc-d)}footer h4,header h4{color:var(--color-t-h-l)}main{width:88vw;max-width:1200px;margin:auto;display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[2];grid-template-columns:repeat(2,1fr);grid-gap:0 8%}@media (min-width:768px){main{-ms-grid-columns:(1fr)[6];grid-template-columns:repeat(6,1fr);grid-gap:0 4%}}@media (min-width:768px) and (min-width:992px){main{-ms-grid-columns:(1fr)[12];grid-template-columns:repeat(12,1fr);grid-gap:0 3%}}.content{padding:16px 11px;-ms-grid-column:1;-ms-grid-column-span:2;grid-column:1/3}@media (min-width:768px){.content{-ms-grid-column:1;-ms-grid-column-span:6;grid-column:1/7}}@media (min-width:768px) and (min-width:992px){.content{-ms-grid-column:1;-ms-grid-column-span:12;grid-column:1/13}}
-/*# sourceMappingURL=/np-design-system.css.map */
+/*===============================================*/
+/*=              1) Import Modules              =*/
+/*===============================================*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+* {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * *
+ * * This stylesheet will contain HIGH-LEVEL global styles
+ *  * Rules:
+ *  * 1) styles MUST be applied directly to HTML tags
+ *  * 2) each style addition should be in a commented section
+ * *
+ * */
+/*----------  Remove Margin on Body and Headings ----------*/
+/*----------  Doesn't work with current webpack config (2019-08-11) ----------*/
+/*---------- Use border-box on all elements ------------*/
+* {
+  box-sizing: border-box;
+}
+
+/*---------- img max-width 100% on all images ------------*/
+img {
+  max-width: 100%;
+}
+
+/*---------- remove list styles on lists ------------*/
+nav * {
+  list-style: none;
+}
+
+:root {
+  /*============================================== */
+  /*=              Neutral Colors                = */
+  /*=============================================*/
+  --color-N000: #FFFFFF;
+  --color-N010: #FAFBFC;
+  --color-N020: #F4F5F7;
+  --color-N030: #EBECF0;
+  --color-N040: #DFE1E6;
+  --color-N050: #C1C7D0;
+  --color-N060: #B3BAC5;
+  --color-N070: #A5ADBA;
+  --color-N080: #97A0AF;
+  --color-N090: #8993A4;
+  --color-N100: #7A869A;
+  --color-N200: #6B778C;
+  --color-N300: #5E6C84;
+  --color-N400: #505F79;
+  --color-N500: #42526E;
+  --color-N600: #344563;
+  --color-N700: #253858;
+  --color-N800: #172B4D;
+  --color-N900: #091E42;
+  /*============================================== */
+  /*=              Feature Colors                = */
+  /*=============================================*/
+  /*----------  Reds  ----------*/
+  --color-R050: #FFEBE6;
+  --color-R075: #FFBDAD;
+  --color-R100: #FF8F73;
+  --color-R200: #FF7452;
+  --color-R300: #FF5630;
+  --color-R400: #DE350B;
+  --color-R500: #BF2600;
+  /*----------  Yellows  ----------*/
+  --color-Y050: #FFFAE6;
+  --color-Y075: #FFF0B3;
+  --color-Y100: #FFE380;
+  --color-Y200: #FFC400;
+  --color-Y300: #FFAB00;
+  --color-Y400: #FF991F;
+  --color-Y500: #FF8B00;
+  /*----------  Greens  ----------*/
+  --color-G050: #E3FCEF;
+  --color-G075: #ABF5D1;
+  --color-G100: #79F2C0;
+  --color-G200: #57D9A3;
+  --color-G300: #36B37E;
+  --color-G400: #00875A;
+  --color-G500: #006644;
+  /*----------  Torquoises  ----------*/
+  --color-T050: #E6FCFF;
+  --color-T075: #B3F5FF;
+  --color-T100: #79E2F2;
+  --color-T200: #00C7E6;
+  --color-T300: #00B8D9;
+  --color-T400: #00A3BF;
+  --color-T500: #008DA6;
+  /*----------  Blues  ----------*/
+  --color-B050: #DEEBFF;
+  --color-B075: #B3D4FF;
+  --color-B100: #4C9AFF;
+  --color-B200: #2684FF;
+  --color-B300: #0065FF;
+  --color-B400: #0052CC;
+  --color-B500: #0747A6;
+  /*----------  Purples  ----------*/
+  --color-P050: #EAE6FF;
+  --color-P075: #C0B6F2;
+  --color-P100: #998DD9;
+  --color-P200: #8777D9;
+  --color-P300: #6554C0;
+  --color-P400: #5243AA;
+  --color-P500: #403294;
+}
+
+:root {
+  /*=============================================*/
+  /*=         Default Color Variables           =*/
+  /*=============================================*/
+  --color-p: var(--color-P400);
+  --color-a: var(--color-T100);
+  --color-a-alt: var(--color-P500);
+  --color-b: var(--color-N010);
+  --color-b-alt: var(--color-N800);
+  --color-t: var(--color-N900);
+  --color-t-alt: var(--color-N020);
+  --color-t-h: var(--color-N800);
+  --color-t-h-alt: var(--color-N040);
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("IBM Plex Sans"), local("IBMPlexSans"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  /*============================================*/
+  /*             Set Type Scale Variables       */
+  /*============================================*/  
+  /*----------  Set Base Font Sizes  ----------*/
+  --d-base-font-size: 18px;
+  --m-base-font-size: 16px;
+  /*----------  Set Type Scale Multipliers  ----------*/
+  --d-multiplier: 1.333 /* Perfect Fourth */;
+  --m-multiplier: 1.250 /* Major Third */;
+  /*============================================= */
+  /*               Type Scale                   = */
+  /*============================================*/
+  /*----------  Desktop Scale  ----------*/
+  /* 0.563rem, 10.13px */ 
+  --d-xs: calc(var(--d-base-font-size) / (var(--d-multiplier) * var(--d-multiplier)));
+  /* 0.750rem, 13.50px */
+  --d-sm: calc(var(--d-base-font-size) / var(--d-multiplier));
+  /* 1.000rem, 18.00px */
+  --d-md: calc(var(--d-base-font-size));
+  /* 1.333rem, 23.99px */
+  --d-lg: calc(var(--d-base-font-size) * var(--d-multiplier));
+  /* 1.777rem, 31.98px */
+  --d-xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier));
+  /* 2.369rem, 42.63px */
+  --d-2xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+  /* 3.157rem, 56.83px */
+  --d-3xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+  /* 4.209rem, 75.76px */
+  --d-4xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+  /*----------  Mobile Scale  ----------*/
+  /* 0.640rem, 10.24px */
+  --m-xs: calc(var(--m-base-font-size) / (var(--m-multiplier) * var(--m-multiplier)));
+  /* 0.800rem, 12.80px */
+  --m-sm: calc(var(--m-base-font-size) / var(--m-multiplier));
+  /* 1.000rem, 16.00px */
+  --m-md: calc(var(--m-base-font-size));
+  /* 1.250rem, 20.00px */
+  --m-lg: calc(var(--m-base-font-size) * var(--m-multiplier));
+  /* 1.563rem, 25.00px */
+  --m-xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier));
+  /* 1.953rem, 31.25px */
+  --m-2xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+  /* 2.441rem, 39.06px */
+  --m-3xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+  /* 3.052rem, 48.83px */
+  --m-4xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+}
+
+/*----------  Import Media Queries to set Responsive Font Sizes  ----------*/
+/*============================================= */
+/*=              Define Variables             = */
+/*=============================================*/    
+/* NOTE: SASS variables are used in this file to allow variable use within the media query selectors */
+/*=================================================== */
+/*=      Create Mixin to @include Media Query       = */
+/*=================================================*/        
+/*----------  Set font-size on html (responsively)  ----------*/
+html {
+  font-size: var(--m-base-font-size);
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: var(--d-base-font-size);
+  }
+}
+
+/*========================================================== */
+/*=       Create Mixins to include Responsive Sizes        = */
+/*=========================================================*/
+/*==============================================*/
+/*=             Imports & Variables            =*/
+/*==============================================*/
+/*----------  Import Mixins  ----------*/
+:root {
+  /*============================================*/
+  /*             Set Type Scale Variables       */
+  /*============================================*/  
+  /*----------  Set Base Font Sizes  ----------*/
+  --d-base-font-size: 18px;
+  --m-base-font-size: 16px;
+  /*----------  Set Type Scale Multipliers  ----------*/
+  --d-multiplier: 1.333 /* Perfect Fourth */;
+  --m-multiplier: 1.250 /* Major Third */;
+  /*============================================= */
+  /*               Type Scale                   = */
+  /*============================================*/
+  /*----------  Desktop Scale  ----------*/
+  /* 0.563rem, 10.13px */ 
+  --d-xs: calc(var(--d-base-font-size) / (var(--d-multiplier) * var(--d-multiplier)));
+  /* 0.750rem, 13.50px */
+  --d-sm: calc(var(--d-base-font-size) / var(--d-multiplier));
+  /* 1.000rem, 18.00px */
+  --d-md: calc(var(--d-base-font-size));
+  /* 1.333rem, 23.99px */
+  --d-lg: calc(var(--d-base-font-size) * var(--d-multiplier));
+  /* 1.777rem, 31.98px */
+  --d-xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier));
+  /* 2.369rem, 42.63px */
+  --d-2xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+  /* 3.157rem, 56.83px */
+  --d-3xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+  /* 4.209rem, 75.76px */
+  --d-4xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier));
+  /*----------  Mobile Scale  ----------*/
+  /* 0.640rem, 10.24px */
+  --m-xs: calc(var(--m-base-font-size) / (var(--m-multiplier) * var(--m-multiplier)));
+  /* 0.800rem, 12.80px */
+  --m-sm: calc(var(--m-base-font-size) / var(--m-multiplier));
+  /* 1.000rem, 16.00px */
+  --m-md: calc(var(--m-base-font-size));
+  /* 1.250rem, 20.00px */
+  --m-lg: calc(var(--m-base-font-size) * var(--m-multiplier));
+  /* 1.563rem, 25.00px */
+  --m-xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier));
+  /* 1.953rem, 31.25px */
+  --m-2xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+  /* 2.441rem, 39.06px */
+  --m-3xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+  /* 3.052rem, 48.83px */
+  --m-4xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier));
+}
+
+/*----------  Import Media Queries to set Responsive Font Sizes  ----------*/
+/*============================================= */
+/*=              Define Variables             = */
+/*=============================================*/    
+/* NOTE: SASS variables are used in this file to allow variable use within the media query selectors */
+/*=================================================== */
+/*=      Create Mixin to @include Media Query       = */
+/*=================================================*/        
+/*----------  Set font-size on html (responsively)  ----------*/
+html {
+  font-size: var(--m-base-font-size);
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: var(--d-base-font-size);
+  }
+}
+
+/*========================================================== */
+/*=       Create Mixins to include Responsive Sizes        = */
+/*=========================================================*/
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("IBM Plex Sans"), local("IBMPlexSans"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("IBM Plex Sans Medium"), local("IBMPlexSans-Medium"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url(https://fonts.gstatic.com/s/ibmplexsans/v6/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  /*=============================================*/
+  /*=            Spacing Variables              =*/
+  /*=============================================*/
+  --space-unit: 1rem;
+  --space-3xs: calc(var(--space-unit) / 3);
+  --space-2xs: calc(2 * var(--space-unit) / 3);
+  --space-xs: var(--space-unit);
+  --space-sm: calc(var(--space-2xs) + var(--space-xs));
+  --space-md: calc(var(--space-xs) + var(--space-sm));
+  --space-lg: calc(var(--space-sm) + var(--space-md));
+  --space-xl: calc(var(--space-md) + var(--space-lg));
+  --space-2xl: calc(var(--space-lg) + var(--space-xl));
+  --space-3xl: calc(var(--space-xl) + var(--space-2xl));
+}
+
+/* https://github.com/CodyHouse/codyhouse-framework */
+:root {
+  /*----------  Define Primary & Secondary Font  ----------*/
+  /* Note: fonts must be imported in _font */
+  --font-primary: "IBM Plex Sans", sans;
+  /* ---------  Vertical Rhythm Grid (used for testing purposes) ----------*/    
+}
+
+html, * {
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  color: var(--color-t-b);
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-t-h);
+}
+
+/*=============================================*/
+/*=           Main Text Styles                =*/
+/*=============================================*/
+h1 {
+  font-size: var(--m-3xl);
+  font-weight: 400;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: var(--d-3xl);
+  }
+}
+
+h2 {
+  font-size: var(--m-2xl);
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: var(--d-2xl);
+  }
+}
+
+h3 {
+  font-size: var(--m-xl);
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: var(--d-xl);
+  }
+}
+
+h4 {
+  font-size: var(--m-lg);
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-size: var(--d-lg);
+  }
+}
+
+h5 {
+  font-size: var(--m-lg);
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-size: var(--d-lg);
+  }
+}
+
+h6 {
+  font-size: var(--m-lg);
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  h6 {
+    font-size: var(--d-lg);
+  }
+}
+
+p {
+  font-size: var(--m-md);
+  font-weight: 400;
+  max-width: 40em;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: var(--d-md);
+  }
+}
+
+a {
+  font-size: var(--m-md);
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  a {
+    font-size: var(--d-md);
+  }
+}
+
+/*=============================================*/
+/*=              Components                   =*/
+/*=============================================*/
+/*----------  Idk if this will be kept in here once we build the components section ----------*/
+.text-button {
+  font-family: var(--font-secondary);
+  color: var(--color-t-h);
+  font-weight: 500;
+  font-size: var(--m-md);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .text-button {
+    font-size: var(--d-md);
+  }
+}
+
+.text-caption {
+  font-family: var(--font-secondary);
+  color: var(--color-t-caption);
+  font-weight: 600;
+  font-size: var(--m-md);
+}
+@media only screen and (min-width: 768px) {
+  .text-caption {
+    font-size: var(--d-md);
+  }
+}
+
+/*=============================================*/
+/*=              Define Variables             =*/
+/*=============================================*/
+:root {
+  /*=============================================*/
+  /*=            Spacing Variables              =*/
+  /*=============================================*/
+  --space-unit: 1rem;
+  --space-3xs: calc(var(--space-unit) / 3);
+  --space-2xs: calc(2 * var(--space-unit) / 3);
+  --space-xs: var(--space-unit);
+  --space-sm: calc(var(--space-2xs) + var(--space-xs));
+  --space-md: calc(var(--space-xs) + var(--space-sm));
+  --space-lg: calc(var(--space-sm) + var(--space-md));
+  --space-xl: calc(var(--space-md) + var(--space-lg));
+  --space-2xl: calc(var(--space-lg) + var(--space-xl));
+  --space-3xl: calc(var(--space-xl) + var(--space-2xl));
+}
+
+/* https://github.com/CodyHouse/codyhouse-framework */
+/*============================================= */
+/*=              Define Variables             = */
+/*=============================================*/    
+/* NOTE: SASS variables are used in this file to allow variable use within the media query selectors */
+/*=================================================== */
+/*=      Create Mixin to @include Media Query       = */
+/*=================================================*/        
+/*=============================================*/
+/*=                  Imports                  =*/
+/*=============================================*/
+:root {
+  --layout-max-width: 900px;
+  --layout-width: 88vw;
+}
+
+/*===============================================*/
+/*=               2) Tests                      =*/
+/*===============================================*/
+html {
+  background-color: var(--color-b);
+}
+
+.button {
+  padding: 14px 27px 14px;
+  border: 3px solid var(--color-a);
+  border-radius: 3px;
+}
+
+.accent-bar {
+  width: 100%;
+  background-color: var(--color-a);
+  height: 10px;
+}
+.accent-bar.sm {
+  height: 4px;
+}
+
+/*# sourceMappingURL=np-design-system.css.map */

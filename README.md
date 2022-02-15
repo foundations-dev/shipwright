@@ -29,3 +29,6 @@ parcel src/index.html
 
 Licensed under the [MIT license](https://github.com/earlman/np-design-system/blob/System-Redesign/LICENSE).
 
+## Similar Projects
+- [Pollen](https://www.pollen.style/)
+

@@ -16,7 +16,7 @@
 1. Copy the files in `src` to wherever you're keeping your SASS files.
 2. To see an example, install [Parcel](https://parceljs.org/) and compile `src/index.html`
 ```bash
-parcel src/index.html
+npx parcel src/index.html
 ```
 
 ### Modules
